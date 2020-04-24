@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        *{
+  margin-top: 0;
+  padding-top: 0;
+}
+body {
+    font-family: "Lato", sans-serif;
+    background-color:rgb(108, 148, 123);
+    color:black;
+    line-height: 1.6em;
+  
+  }
+  
+  .heading-1{
+    background-color: grey;
+    font-family: cursive;
+    text-align: center;
+    padding:20px;
+    font-size: 30px;
+    text-shadow:4px 0 0 rgb(168, 168, 168), 1px 1px 0 rgb(35, 61, 65),5px -1px 0 white, 3px 0 0 rgb(94, 47, 73);
+    margin: 0px 2px 1.2px 2px;
+    box-sizing: border-box;
+    border: dashed;
+    border-radius: 20px;
+  }
+
+    </style>
+    <div class="heading-1">
+        <h1>OLT QUESTIONS<br><br><br> - Analog Circuits <br></h1>
+
+    </div>
+    <div class="questions">
+        <!--heading of the chapter-->
+        <h2 style="text-align: center;">Oscilltors-UNIT-3</h2>
+
+        <!--Question 1-->
+        <p><b> Question.1</b><br>Oscillators must employ-<br>
+            A.Possitive feedback <br>
+            B.Negative feedback <br>
+            C.Neither negative nor positive feedbacks <br>
+            D.None of the above <br>
+        </p>
+        <p><button onclick="answer1()"><b>Answer</b></button></p>
+        <div id="answer-1"> </div>
+        <script>
+            function answer1(){
+                var x1=document.getElementById('answer-1');
+                if(x1.innerHTML===" "){
+                    x1.innerHTML="Option (A)--A.Possitive feedback";
+                }
+                else{
+                    x1.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+
+        <!--Question 2-->
+        <p><b> Question.2</b><br>The phase shift oscillator generally contains- <br>
+            A.Four stages of RC circuit <br>
+            B.One stage of LC circuit <br>
+            C.Three stages of RC circuit <br>
+            D.Two stages of RC circuit <br>
+        </p>
+        <p><button onclick="answer2()"><b>Answer</b></button></p>
+        <div id="answer-2"> </div>
+        <script>
+            function answer2(){
+                var x2=document.getElementById('answer-2');
+                if(x2.innerHTML===" "){
+                    x2.innerHTML="Option (C)--C.Three stages of RC circuit";
+                }
+                else{
+                    x2.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <!--Question 3-->
+        <p><b>Question.3</b><br>In order to sustain oscillations in an oscillator- <br>
+           A.Phase should be 00 <br>
+           B.Feedback factor should be unity <br>
+           C.Both (a) and (b) <br>
+           D.Feedback should be negative <br>
+       </p>
+       <p><button onclick="answer3()"><b>Answer</b></button></p>
+       <div id="answer-3"> </div>
+       <script>
+           function answer3(){
+               var x3=document.getElementById('answer-3');
+               if(x3.innerHTML===" "){
+                   x3.innerHTML="Option (C)-- C.Both (a) and (b)";
+               }
+               else{
+                   x3.innerHTML=" ";
+               }
+           }
+       </script>
+       <hr>
+               <!--Question 4-->
+               <p><b>Question.4</b><br>Which of the following is the main advantage of using oscillators?-br    
+                A.High frequency <br>
+                B.High output voltage <br>
+                C.Constant frequency of oscillations <br>
+                D.Suitability for low voltages <br>
+            </p>
+            <p><button onclick="answer4()"><b>Answer</b></button></p>
+            <div id="answer-4"> </div>
+            <script>
+                function answer4(){
+                    var x4=document.getElementById('answer-4');
+                    if(x4.innerHTML===" "){
+                        x4.innerHTML="Option (C)-- C.Constant frequency of oscillations";
+                    }
+                    else{
+                        x4.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+             <!--Question 5-->
+             <p><b>Question.5</b><br>Which of the following is used to generate flat-top samples? <br>
+                Schmitt trigger <br>
+                Astable multivibrator <br>
+                Sample and hold circuit <br>
+                Oscillator <br>
+            </p>
+            <p><button onclick="answer5()"><b>Answer</b></button></p>
+            <div id="answer-5"> </div>
+            <script>
+                function answer5(){
+                    var x5=document.getElementById('answer-5');
+                    if(x5.innerHTML===" "){
+                        x5.innerHTML="Option (C)-- Sample and hold circuit";
+                    }
+                    else{
+                        x5.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+             
+             <!--Question 6-->
+             <p><b>Question.6</b><br>The frequency for a Weinbridge oscillator is given by <br>
+                A.(1/2pi) RC <br>
+                B.2pi/RC <br>
+                C.1/2piRC <br>
+                D.1/(2RC) <br>
+            </p>
+            <p><button onclick="answer6()"><b>Answer</b></button></p>
+            <div id="answer-6"> </div>
+            <script>
+                function answer6(){
+                    var x6=document.getElementById('answer-6');
+                    if(x6.innerHTML===" "){
+                        x6.innerHTML="Option (C)-- C.1/2piRC";
+                    }
+                    else{
+                        x6.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+             <!--Question 7-->
+             <p><b>Question.7</b><br>Which of the following statements is correct regarding the Wien-bridge oscillator? <br>
+                A.It is also called sine-cosine oscillator <br>
+                B.It is a square wave generator <br>
+                C.It is a free-running oscillator <br>
+                D.It is a stable sine-wave audiogenerator <br>
+            </p>
+            <p><button onclick="answer7()"><b>Answer</b></button></p>
+            <div id="answer-7"> </div>
+            <script>
+                function answer7(){
+                    var x7=document.getElementById('answer-7');
+                    if(x7.innerHTML===" "){
+                        x7.innerHTML="Option (D)-- D.It is a stable sine-wave audiogenerator";
+                    }
+                    else{
+                        x7.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+                <!--Question 8-->
+             <p><b>Question 8</b><br>A Wein bridge oscillator generates oscillations only if the gain of the two stage amplifier is <br>
+                A.Less than 3 <br>
+                B.Unity <br>
+                C.More than 3 <br>
+                D.Less than unity <br>
+            </p>
+            <p><button onclick="answer8()"><b>Answer</b></button></p>
+            <div id="answer-8"> </div>
+            <script>
+                function answer8(){
+                    var x8=document.getElementById('answer-8');
+                    if(x8.innerHTML===" "){
+                        x8.innerHTML="Option (C)-- C.More than 3";
+                    }
+                    else{
+                        x8.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+             <!--Question 9-->
+             <p><b>Question.9</b><br>An oscillator can produce <br>
+                A.Sawtooth waves <br>
+                B.Square waves <br>
+                C.Sine waves <br>
+                D.Any of the above <br>
+            </p>
+            <p><button onclick="answer9()"><b>Answer</b></button></p>
+            <div id="answer-9"> </div>
+            <script>
+                function answer9(){
+                    var x9=document.getElementById('answer-9');
+                    if(x9.innerHTML===" "){
+                        x9.innerHTML="Option (D)-- D.Any of the above";
+                    }
+                    else{
+                        x9.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+             <!--Question 10-->
+             <p><b>Question.10</b><br>The gain of an ideal oscillator is <br>
+                A.Unity <br>
+                B.Zero <br>
+                C.Infinity <br>
+                D.Slightly more than unity <br>
+            </p>
+            <p><button onclick="answer10()"><b>Answer</b></button></p>
+            <div id="answer-10"> </div>
+            <script>
+                function answer10(){
+                    var x10=document.getElementById('answer-10');
+                    if(x10.innerHTML===" "){
+                        x10.innerHTML="Option (a)-- A.Unity";
+                    }
+                    else{
+                        x10.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+             <!--Question 11-->
+             <p><b>Question.11</b><br>An LC oscillator cannot be used to produce ………………frequencies <br>
+                A.High <br>
+                B.Audio <br>
+                C.Very low <br>
+                D.Very high <br>
+            </p>
+            <p><button onclick="answer11()"><b>Answer</b></button></p>
+            <div id="answer-11"> </div>
+            <script>
+                function answer11(){
+                    var x11=document.getElementById('answer-11');
+                    if(x11.innerHTML===" "){
+                        x11.innerHTML="Option (C)-- C.Very low";
+                    }
+                    else{
+                        x11.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+             <!--Question 12-->
+             <p><b>Question.12</b><br>In an LC oscillator, the frequency of oscillator is …………… L or C. <br>
+                A.Proportional to square of <br>
+                B.Directly proportional to <br>
+                C.Independent of the values of <br>
+                D.Inversely proportional to square root of <br>
+            <p><button onclick="answer12()"><b>Answer</b></button></p>
+            <div id="answer-12"> </div>
+            <script>
+                function answer12(){
+                    var x12=document.getElementById('answer-12');
+                    if(x12.innerHTML===" "){
+                        x12.innerHTML="Option (D)--D.Inversely proportional to square root of ";
+                    }
+                    else{
+                        x12.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+             <!--Question 13-->
+             <p><b>Question.13</b><br>The type of oscillators used in the simple radio receivers are br
+                A.Wein bridge type <br>
+                B.Colpitt's type <br>
+                C.Phase shift type <br>
+                D.None of the above <br>
+            </p>
+            <p><button onclick="answer13()"><b>Answer</b></button></p>
+            <div id="answer-13"> </div>
+            <script>
+                function answer13(){
+                    var x13=document.getElementById('answer-13');
+                    if(x13.innerHTML===" "){
+                        x13.innerHTML="Option (B)--B.Colpitt's type";
+                    }
+                    else{
+                        x13.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+             <!--Question 14-->
+             <p><b>Question.14</b><br>In Colpitt’s oscillator, feedback is obtained ……………<div class="br"></div>
+                A.By magnetic induction <br>
+                B.By a tickler coil <br>
+                C.From the centre of split capacitors <br>
+                D.None of the above <br>
+            </p>
+            <p><button onclick="answer14()"><b>Answer</b></button></p>
+            <div id="answer-14"> </div>
+            <script>
+                function answer14(){
+                    var x14=document.getElementById('answer-14');
+                    if(x14.innerHTML===" "){
+                        x14.innerHTML="Option (C)-- C.From the centre of split capacitors";
+                    }
+                    else{
+                        x14.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+            <!--Question 15-->
+            <p><b>Question.15</b><br>In an LC oscillator, if the value of L is increased four times, the frequency of oscillations is ………… <br>
+                A.Increased 2 times <br>
+                B.Decreased 4 times <br>
+                C.Increased 4 times <br>
+                D.Decreased 2 times <br>
+            </p>
+            <p><button onclick="answer15()"><b>Answer</b></button></p>
+            <div id="answer-15"> </div>
+            <script>
+                function answer15(){
+                    var x15=document.getElementById('answer-15');
+                    if(x15.innerHTML===" "){
+                        x15.innerHTML="Option (d)--  D.Decreased 2 times";
+                    }
+                    else{
+                        x15.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+            <h3 style="text-align: center;">MultiVibrator Questions</h3>
+            <!--Question 16-->
+            <p><b>Question.16</b><br>Schmitt trigger uses <br>
+                A.Positive feedback <br>
+                B.Negative feedback <br>
+                C.Neither negative nor positive feedbacks <br>
+                D.None of the above <br>
+           </p>
+           <p><button onclick="answer16()"><b>Answer</b></button></p>
+           <div id="answer-16"> </div>
+           <script>
+               function answer16(){
+                   var x16=document.getElementById('answer-16');
+                   if(x16.innerHTML===" "){
+                       x16.innerHTML="Option (A)--   A.Positive feedback";
+                   }
+                   else{
+                       x16.innerHTML=" ";
+                   }
+               }
+           </script>
+           <hr>
+           <!--Question 17-->
+           <p><b>Question.14</b><br>Schmitt trigger bistable multivibrator has <br>
+            A.only one stable state <br>
+            B.two stable states <br>
+            C.no stable state <br>
+            D.None of the above <br>
+          </p>
+          <p><button onclick="answer17()"><b>Answer</b></button></p>
+          <div id="answer-17"> </div>
+          <script>
+              function answer17(){
+                  var x17=document.getElementById('answer-17');
+                  if(x17.innerHTML===" "){
+                      x17.innerHTML="Option (C)--B.two stable states ";
+                  }
+                  else{
+                      x17.innerHTML=" ";
+                  }
+              }
+          </script>
+          <hr>
+          <!--Question 18-->
+          <p><b>Question.18</b><br>The voltage transfer characteristic of Schmitt trigger shows <br>
+            A.hysteresis due to positive feedback <br>
+            B.hysteresis due to negative feedback <br>
+            C.no hysteresis <br>
+            D.None of the above <br>
+        </p>
+        <p><button onclick="answer18()"><b>Answer</b></button></p>
+        <div id="answer-18"> </div>
+        <script>
+            function answer18(){
+                var x18=document.getElementById('answer-18');
+                if(x18.innerHTML===" "){
+                    x18.innerHTML="Option (A)-- A.hysteresis due to positive feedback";
+                }
+                else{
+                    x18.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <!--Question 19-->
+        <p><b>Question.19</b><br>An inverting Schmitt trigger has <br>
+            A.input at its inverting terminal <br>
+            B.input at its noninverting terminal <br>
+            C.no input <br>
+            D.None of the above <br>
+        </p>
+        <p><button onclick="answer19()"><b>Answer</b></button></p>
+        <div id="answer-19"> </div>
+        <script>
+            function answer19(){
+                var x19=document.getElementById('answer-19');
+                if(x19.innerHTML===" "){
+                    x19.innerHTML="Option (A)-- A.input at its inverting terminal";
+                }
+                else{
+                    x19.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <!--Question 20-->
+        <p><b>Question.20</b><br>In a Schmitt trigger bistable multivibrator, the high threshold voltage (VTH) and <br>
+            the low threshold voltage (VTL) depends on <br>
+            A.both the resistanses (R1 and R2) in positive feedback and the output voltage <br>
+            B.output voltage only <br>
+            C.input voltage only <br>
+            D.None of the above <br>
+       </p>
+       <p><button onclick="answer20()"><b>Answer</b></button></p>
+       <div id="answer-20"> </div>
+       <script>
+           function answer20(){
+               var x20=document.getElementById('answer-20');
+               if(x20.innerHTML===" "){
+                   x20.innerHTML="Option (A)--A.both the resistanses (R1 and R2) in positive feedback and the output voltage";
+               }
+               else{
+                   x20.innerHTML=" ";
+               }
+           }
+       </script>
+       <hr>
+       <!--Question 21-->
+       <p><b>Question.21</b><br>Schmitt trigger oscillator is also known as
+        A.Schmitt trigger astable multivibrator
+        B.Schmitt trigger monostable multivibrator
+        C.Schmitt trigger bistable multivibrator
+        D.None of the above
+      </p>
+      <p><button onclick="answer21()"><b>Answer</b></button></p>
+      <div id="answer-21"> </div>
+      <script>
+          function answer21(){
+              var x21=document.getElementById('answer-21');
+              if(x21.innerHTML===" "){
+                  x21.innerHTML="Option (A)--A.Schmitt trigger astable multivibrator ";
+              }
+              else{
+                  x21.innerHTML=" ";
+              }
+          }
+      </script>
+      <hr>
+      <!--Question 22-->
+      <p><b> Question.22</b><br>Schmitt trigger astable multivibrator has <br>
+        A.positive feedback only <br>
+        B.Negative feedback only <br>
+        C.Neither negative nor positive feedbacks <br>
+        D.both negative and positive feedbacks <br>
+    </p>
+    <p><button onclick="answer22()"><b>Answer</b></button></p>
+    <div id="answer-22"> </div>
+    <script>
+        function answer22(){
+            var x22=document.getElementById('answer-22');
+            if(x22.innerHTML===" "){
+                x22.innerHTML="Option (D)--D.both negative and positive feedbacks";
+            }
+            else{
+                x22.innerHTML=" ";
+            }
+        }
+    </script>
+    <hr>
+    <!--Question 23-->
+    <p><b>Question.23</b><br>The negative feedback of the Schmitt trigger oscillator has <br>
+        A.RC network <br>
+        B.only R network <br>
+        C.RL network <br>
+        D.None of the above <br>
+   </p>
+   <p><button onclick="answer23()"><b>Answer</b></button></p>
+   <div id="answer-23"> </div>
+   <script>
+       function answer23(){
+           var x23=document.getElementById('answer-23');
+           if(x23.innerHTML===" "){
+               x23.innerHTML="Option (A)--A.RC network ";
+           }
+           else{
+               x23.innerHTML=" ";
+           }
+       }
+   </script>
+   <hr>
+           <!--Question 24-->
+           <p><b>Question.24</b><br>Schmitt trigger astable multivibrator generates <br>
+            A.square wave output <br>
+            B.sinusoidal output <br>
+            C.triangular wave output <br>
+            D.None of the above <br>
+        </p>
+        <p><button onclick="answer24()"><b>Answer</b></button></p>
+        <div id="answer-24"> </div>
+        <script>
+            function answer24(){
+                var x24=document.getElementById('answer-24');
+                if(x24.innerHTML===" "){
+                    x24.innerHTML="Option (A)--A.square wave output";
+                }
+                else{
+                    x24.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 25-->
+         <p><b>Question.25</b><br>The oscillation frequency of a Schmitt trigger oscillator depends on <br>
+            A.resistance and capacitance values <br>
+            B.only on resistance values <br>
+            C.only on capacitance values <br>
+            D.None of the above <br>
+        </p>
+        <p><button onclick="answer25()"><b>Answer</b></button></p>
+        <div id="answer-25"> </div>
+        <script>
+            function answer25(){
+                var x25=document.getElementById('answer-25');
+                if(x25.innerHTML===" "){
+                    x25.innerHTML="Option (A)--A.resistance and capacitance values";
+                }
+                else{
+                    x25.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         
+         <!--Question 26-->
+         <p><b>Question.26</b><br>A monostable multivibrator has <br>
+            A.only one stable state <br>
+            B.two stable states <br>
+            C.no stable state <br>
+            D.None of the above <br>
+        </p>
+        <p><button onclick="answer26()"><b>Answer</b></button></p>
+        <div id="answer-26"> </div>
+        <script>
+            function answer26(){
+                var x26=document.getElementById('answer-26');
+                if(x26.innerHTML===" "){
+                    x26.innerHTML="Option (A)--A.only one stable state";
+                }
+                else{
+                    x26.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 27-->
+         <p><b>Question.27</b><br>Schmitt trigger monostable multivibrator is also known as <br>
+            A.one-shot <br>
+            B.Schmitt trigger oscillator <br>
+            C.Schmitt trigger square-wave oscillator <br>
+            D.None of the above <br>
+        </p>
+        <p><button onclick="answer27()"><b>Answer</b></button></p>
+        <div id="answer-27"> </div>
+        <script>
+            function answer27(){
+                var x27=document.getElementById('answer-27');
+                if(x27.innerHTML===" "){
+                    x27.innerHTML="Option (A)-- A.one-shot";
+                }
+                else{
+                    x27.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+            <!--Question 28-->
+         <p><b>Question 28</b><br>The Schmitt trigger monostable multivibrator requires <br>
+            A.no input <br>
+            B.step input <br>
+            C.sinusoidal input <br>
+            D.None of the above <br>
+        </p>
+        <p><button onclick="answer28()"><b>Answer</b></button></p>
+        <div id="answer-28"> </div>
+        <script>
+            function answer28(){
+                var x28=document.getElementById('answer-28');
+                if(x28.innerHTML===" "){
+                    x28.innerHTML="Option (B)-- B.step input";
+                }
+                else{
+                    x28.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 29-->
+         <p><b>Question.29</b><br>Schmitt trigger monostable multivibrator generates <br>
+            A.square wave output <br>
+            B.sinusoidal output <br>
+            C.a single pulse output <br>
+            D.None of the above <br>
+        </p>
+        <p><button onclick="answer29()"><b>Answer</b></button></p>
+        <div id="answer-29"> </div>
+        <script>
+            function answer29(){
+                var x29=document.getElementById('answer-29');
+                if(x29.innerHTML===" "){
+                    x29.innerHTML="Option (C)--C.a single pulse output";
+                }
+                else{
+                    x29.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 30-->
+         <p><b>Question.30</b><br>The pulse-width (T) of a Schmitt trigger monostable multivibrator depends on <br>
+            A.time-constant (RC product) <br>
+            B.only on resistance values <br>
+            C.only on capacitance values <br>
+            D.None of the above <br>
+        </p>
+        <p><button onclick="answer30()"><b>Answer</b></button></p>
+        <div id="answer-30"> </div>
+        <script>
+            function answer30(){
+                var x30=document.getElementById('answer-30');
+                if(x30.innerHTML===" "){
+                    x30.innerHTML="Option (A)-- A.time-constant (RC product)";
+                }
+                else{
+                    x30.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <h3 style="text-align: center;">OP-AMP Questions - UNIT 5</h3>
+        <!--Question 31-->
+        <p><b>Question.31</b><br>If ground is applied to the (+) terminal of an inverting op-amp, the (–) terminal will <br>
+            A. Not need an input resistor <br>
+            B. Be virtual ground <br>
+            C. Have high reverse current <br>
+            D. Not invert the signal <br>
+         </p>
+         <p><button onclick="answer31()"><b>Answer</b></button></p>
+         <div id="answer-31"> </div>
+         <script>
+             function answer31(){
+                 var x31=document.getElementById('answer-31');
+                 if(x31.innerHTML===" "){
+                     x31.innerHTML="Option (B)--  B. Be virtual ground";
+                 }
+                 else{
+                     x31.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 32-->
+          <p><b>Question.32</b><br>The closed-loop voltage gain of an inverting amplifier equal to <br>
+            A. The ratio of the input resistance to feedback resistance <br>
+            B. The open-loop voltage gain <br>
+            C. The feedback resistance divided by the input resistance <br>
+            D. The input resistance <br>
+        </p>
+        <p><button onclick="answer32()"><b>Answer</b></button></p>
+         <div id="answer-32"> </div>
+         <script>
+             function answer32(){
+                 var x32=document.getElementById('answer-32');
+                 if(x32.innerHTML===" "){
+                     x32.innerHTML="Option (C)-- C. The feedback resistance divided by the input resistancee";
+                 }
+                 else{
+                     x32.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+         <!--Question 33-->
+         <p><b>Question.33</b><br> The ideal OP-AMP has the following characteristics. <br>
+            A. Ri=∞ ,A=∞ ,R0=0 <br>
+            B. Ri=0 ,A=∞ ,R0=0 <br>
+            C. Ri=∞ ,A=∞ ,R0=∞ <br>
+            D. Ri=0 ,A=∞ ,R0=∞ <br>
+         </p>
+         <p><button onclick="answer33()"><b>Answer</b></button></p>
+         <div id="answer-33"> </div>
+         <script>
+             function answer33(){
+                 var x33=document.getElementById('answer-33');
+                 if(x33.innerHTML===" "){
+                     x33.innerHTML="Option (A)--A. Ri=∞ ,A=∞ ,R0=0";
+                 }
+                 else{
+                     x33.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 34-->
+          <p><b>Question.34</b><br>An ideal OP-AMP is an ideal <br>
+            A. Current controlled Current source <br>
+            B. Current controlled Voltage source <br>
+            C. Voltage controlled Voltage source <br>
+            D. Voltage controlled Current source <br>
+         </p>
+         <p><button onclick="answer34()"><b>Answer</b></button></p>
+         <div id="answer-34"> </div>
+         <script>
+             function answer34(){
+                 var x34=document.getElementById('answer-34');
+                 if(x34.innerHTML===" "){
+                     x34.innerHTML="Option (C)--C. Voltage controlled Voltage source";
+                 }
+                 else{
+                     x34.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+         <!--Question 35-->
+         <p><b>Question.35</b><br>For an ideal op-amp, which of the following is true? <br>
+            A. The differential voltage across the input terminals is zero <br>
+            B. The current into the input terminals is zero <br>
+            C. The current from output terminal is zero <br>
+            D. The output resistance is zero <br>
+        </p>
+        <p><button onclick="answer35()"><b>Answer</b></button></p>
+        <div id="answer-35"> </div>
+        <script>
+            function answer35(){
+                var x35=document.getElementById('answer-35');
+                if(x35.innerHTML===" "){
+                    x35.innerHTML="Option (C)--C. The current from output terminal is zero";
+                }
+                else{
+                    x35.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <!--Question 36-->
+        <p><b>Question.36</b><br>Assume that in integrator circuit, If Vi is a triangular wave, then Vo will be <br>
+            A. Square wave <br>
+            B. Triangular wave <br>
+            C. Parabolic wave <br>
+            D. Sine wave <br>
+       </p>
+       <p><button onclick="answer36()"><b>Answer</b></button></p>
+       <div id="answer-36"> </div>
+       <script>
+           function answer36(){
+               var x36=document.getElementById('answer-36');
+               if(x36.innerHTML===" "){
+                   x36.innerHTML="Option (D)--D. Sine wave";
+               }
+               else{
+                   x36.innerHTML=" ";
+               }
+           }
+       </script>
+       <hr>
+       <!--Question 37-->
+       <p><b>Question.37</b><br>When a step-input is given to an op-amp integrator, the output will be <br>
+        A. A ramp. <br>
+        B. A sinusoidal wave. <br>
+        C. A rectangular wave. <br>
+        D. A triangular wave with dc bias <br>
+      </p>
+      <p><button onclick="answer37()"><b>Answer</b></button></p>
+      <div id="answer-37"> </div>
+      <script>
+          function answer37(){
+              var x37=document.getElementById('answer-37');
+              if(x37.innerHTML===" "){
+                  x37.innerHTML="Option (A)-- A. A ramp.";
+              }
+              else{
+                  x37.innerHTML=" ";
+              }
+          }
+      </script>
+      <hr>
+      <!--Question 38-->
+      <p><b>Question.38</b><br>CMRR of an ideal op-amp is: <br>
+        <br>
+        A. Infinite <br>
+        B. Very high <br>
+        C. Low <br>
+        D. Very low <br>
+    </p>
+    <p><button onclick="answer38()"><b>Answer</b></button></p>
+    <div id="answer-38"> </div>
+    <script>
+        function answer38(){
+            var x38=document.getElementById('answer-38');
+            if(x38.innerHTML===" "){
+                x38.innerHTML="Option (A)-- A. Infinite";
+            }
+            else{
+                x38.innerHTML=" ";
+            }
+        }
+    </script>
+    <hr>
+    <!--Question 39-->
+    <p><b>Question.39</b><br>Op-amp integrator uses: <br> 
+        A. Capacitor as feedback element <br>
+        B. Resistor as feedback element <br>
+        C. Inductor as feedback element <br>
+        D. A simple wire as feedback element <br>
+    </p>
+    <p><button onclick="answer39()"><b>Answer</b></button></p>
+    <div id="answer-39"> </div>
+    <script>
+        function answer39(){
+            var x39=document.getElementById('answer-39');
+            if(x39.innerHTML===" "){
+                x39.innerHTML="Option (A)-- A. Capacitor as feedback element";
+            }
+            else{
+                x39.innerHTML=" ";
+            }
+        }
+    </script>
+    <hr>
+    <!--Question 40-->
+    <p><b>Question.40</b><br>Op-amp integrator uses: <br>
+        A. Capacitor as input element <br>
+        B. Resistor as input element <br>
+        C. Inductor as input element <br>
+        D. A simple wire as input element <br>
+   </p>
+   <p><button onclick="answer40()"><b>Answer</b></button></p>
+   <div id="answer-40"> </div>
+   <script>
+       function answer40(){
+           var x40=document.getElementById('answer-40');
+           if(x40.innerHTML===" "){
+               x40.innerHTML="Option (B)--B. Resistor as input element";
+           }
+           else{
+               x40.innerHTML=" ";
+           }
+       }
+   </script>
+   <hr>
+   <h1 style="text-align: center;">END</h1>
+
+
+
+
+
+        </div>
+
+</body>
+</html>

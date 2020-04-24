@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        *{
+  margin-top: 0;
+  padding-top: 0;
+}
+body {
+    font-family: "Lato", sans-serif;
+    background-color:grey;
+    color:black;
+    line-height: 1.6em;
+  
+  }
+  
+  .heading-1{
+    background-color: #c4b9b9;
+    font-family: cursive;
+    text-align: center;
+    padding:20px;
+    font-size: 30px;
+    text-shadow:4px 0 0 rgb(168, 168, 168), 1px 1px 0 rgb(35, 61, 65),5px -1px 0 white, 3px 0 0 rgb(94, 47, 73);
+    margin: 0px 2px 1.2px 2px;
+    box-sizing: border-box;
+    border: dashed;
+    border-radius: 20px;
+  }
+
+    </style>
+    <div class="heading-1">
+        <h1>OLT QUESTIONS<br><br><br> - Python <br></h1>
+
+    </div>
+    <div class="questions">
+      <!--heading of the chapter-->
+      <h2 style="text-align: center;">Python Programming</h2>
+
+      <!--Question 1-->
+      <p><b> Question.1</b><br>Suppose list1 is [4, 2, 2, 4, 5, 2, 1, 0], Which of the following is correct syntax for slicing operation? <br>
+        A. print(list1[0]) <br>
+        B. print(list1[:2]) <br>
+        C. print(list1[:-2]) <br>
+        D. all of the mentioned <br>
+      </p>
+      <p><button onclick="answer1()"><b>Answer</b></button></p>
+      <div id="answer-1"> </div>
+      <script>
+          function answer1(){
+              var x1=document.getElementById('answer-1');
+              if(x1.innerHTML===" "){
+                  x1.innerHTML="Option (D)--D. all of the mentioned ";
+              }
+              else{
+                  x1.innerHTML=" ";
+              }
+          }
+      </script>
+      <hr>
+
+      <!--Question 2-->
+      <p><b> Question.2</b><br>What is the output when we execute list(“hello”)? <br>
+        A. [‘h’, ‘e’, ‘l’, ‘l’, ‘o’] <br>
+        B. [‘hello’] <br>
+        C. [‘llo’] <br>
+        D. [‘olleh’] <br>
+      </p>
+      <p><button onclick="answer2()"><b>Answer</b></button></p>
+      <div id="answer-2"> </div>
+      <script>
+          function answer2(){
+              var x2=document.getElementById('answer-2');
+              if(x2.innerHTML===" "){
+                  x2.innerHTML="Option (A)-- A. [‘h’, ‘e’, ‘l’, ‘l’, ‘o’] ";
+              }
+              else{
+                  x2.innerHTML=" ";
+              }
+          }
+      </script>
+      <hr>
+      <!--Question 3-->
+      <p><b>Question.3</b><br>Which of the following commands will create a list? <br>
+        A. list1 = list() <br>
+        B. list1 = [] <br>
+        C. list1 = list([1, 2, 3]) <br>
+        D. all of the mentioned <br>
+     </p>
+     <p><button onclick="answer3()"><b>Answer</b></button></p>
+     <div id="answer-3"> </div>
+     <script>
+         function answer3(){
+             var x3=document.getElementById('answer-3');
+             if(x3.innerHTML===" "){
+                 x3.innerHTML="Option (D)- D. all of the mentioned";
+             }
+             else{
+                 x3.innerHTML=" ";
+             }
+         }
+     </script>
+     <hr>
+             <!--Question 4-->
+             <p><b>Question.4</b><br>What is the data type of X in X = (12.12, 13, 'cppbuzz')? <br>
+              A. Tuple <br>
+              B. Array <br>
+              C. Dictionary <br>
+              D. List <br>
+              
+          </p>
+          <p><button onclick="answer4()"><b>Answer</b></button></p>
+          <div id="answer-4"> </div>
+          <script>
+              function answer4(){
+                  var x4=document.getElementById('answer-4');
+                  if(x4.innerHTML===" "){
+                      x4.innerHTML="Option (A)-- A. Tuple";
+                  }
+                  else{
+                      x4.innerHTML=" ";
+                  }
+              }
+          </script>
+          <hr>
+           <!--Question 5-->
+           <p><b>Question.5</b><br>What will be the output of the following Python code? <br>
+            >>>t=(1,2,4,3) <br>
+            >>>t[1:-1] <br>
+            A. (1, 2) <br>
+            B. (1, 2, 4) <br>
+            C. (2, 4) <br>
+            D. (2, 4, 3) <br>
+          </p>
+          <p><button onclick="answer5()"><b>Answer</b></button></p>
+          <div id="answer-5"> </div>
+          <script>
+              function answer5(){
+                  var x5=document.getElementById('answer-5');
+                  if(x5.innerHTML===" "){
+                      x5.innerHTML="Option (C)-- C. (2, 4)";
+                  }
+                  else{
+                      x5.innerHTML=" ";
+                  }
+              }
+          </script>
+          <hr>
+           
+           <!--Question 6-->
+           <p><b>Question.6</b><br>Which of the following lines of code will result in an error? <br>
+            A. s={abs} <br>
+            B. s={4, ‘abc’, (1,2)} <br>
+            C. s={2, 2.2, 3, ‘xyz’} <br>
+            D. s={san} <br>
+          </p>
+          <p><button onclick="answer6()"><b>Answer</b></button></p>
+          <div id="answer-6"> </div>
+          <script>
+              function answer6(){
+                  var x6=document.getElementById('answer-6');
+                  if(x6.innerHTML===" "){
+                      x6.innerHTML="Option (D)-D. s={san})";
+                  }
+                  else{
+                      x6.innerHTML=" ";
+                  }
+              }
+          </script>
+          <hr>
+           <!--Question 7-->
+           <p><b>Question.7</b><br>What is the output of the code shown below? <br>
+            s=set([1, 2, 3]) <br>
+            s.union([4, 5]) <br>
+            s|([4, 5]) <br>
+            <br>
+            A.{1, 2, 3, 4, 5} <br>
+            {1, 2, 3, 4, 5} <br>
+            B.Error <br>
+            {1, 2, 3, 4, 5} <br>
+            C.{1, 2, 3, 4, 5} <br>
+            Error <br>
+            D.Error <br>
+            Error <br>
+          </p>
+          <p><button onclick="answer7()"><b>Answer</b></button></p>
+          <div id="answer-7"> </div>
+          <script>
+              function answer7(){
+                  var x7=document.getElementById('answer-7');
+                  if(x7.innerHTML===" "){
+                      x7.innerHTML="Option (C)--C.{1, 2, 3, 4, 5} ";
+                  }
+                  else{
+                      x7.innerHTML=" ";
+                  }
+              }
+          </script>
+          <hr>
+              <!--Question 8-->
+           <p><b>Question 8</b><br>
+            What is the output of the line of code shown below, if s1= {1, 2, 3}? <br>
+            s1.issubset(s1) <br>
+            <br>
+            A. True <br>
+            B. Error <br>
+            C. No output <br>
+            D. False <br>
+          <p><button onclick="answer8()"><b>Answer</b></button></p>
+          <div id="answer-8"> </div>
+          <script>
+              function answer8(){
+                  var x8=document.getElementById('answer-8');
+                  if(x8.innerHTML===" "){
+                      x8.innerHTML="Option (a)-- A. True";
+                  }
+                  else{
+                      x8.innerHTML=" ";
+                  }
+              }
+          </script>
+          <hr>
+           <!--Question 9-->
+           <p><b>Question.9</b><br>Which of the following is not the correct syntax for creating a set? <br>
+            <br>
+            a) set([[1,2],[3,4]]) <br>
+            b) set([1,2,2,3,4]) <br>
+            c) set((1,2,3,4)) <br>
+            d) {1,2,3,4} <br>
+          </p>
+          <p><button onclick="answer9()"><b>Answer</b></button></p>
+          <div id="answer-9"> </div>
+          <script>
+              function answer9(){
+                  var x9=document.getElementById('answer-9');
+                  if(x9.innerHTML===" "){
+                      x9.innerHTML="Option (A)--a) set([[1,2],[3,4]])";
+                  }
+                  else{
+                      x9.innerHTML=" ";
+                  }
+              }
+          </script>
+          <hr>
+           <!--Question 10-->
+           <p><b>Question.10</b><br>What will be the output of the following Python code? <br>
+            a={4,5,6} <br>
+            b={2,8,6} <br>
+            a-b <br>
+            <br>
+            a) {4,5} <br>
+            b) {6} <br>
+            c) Error as unsupported operand type for set data type <br>
+            d) Error as the duplicate item 6 is present in both sets <br>
+              
+              
+          </p>
+          <p><button onclick="answer10()"><b>Answer</b></button></p>
+          <div id="answer-10"> </div>
+          <script>
+              function answer10(){
+                  var x10=document.getElementById('answer-10');
+                  if(x10.innerHTML===" "){
+                      x10.innerHTML="Option (A)-- a={4,5,6}";
+                  }
+                  else{
+                      x10.innerHTML=" ";
+                  }
+              }
+          </script>
+          <hr>
+          <h1 style="text-align: center;">END</h1>
+          
+          
+        </body>
+</html>

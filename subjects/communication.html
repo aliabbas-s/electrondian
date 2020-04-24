@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        *{
+  margin-top: 0;
+  padding-top: 0;
+}
+body {
+    font-family: "Lato", sans-serif;
+    background-color:rgb(108, 148, 123);
+    color:black;
+    line-height: 1.6em;
+  
+  }
+  
+  .heading-2{
+    background-color: grey;
+    font-family: cursive;
+    text-align: center;
+    padding:20px;
+    font-size: 30px;
+    text-shadow:4px 0 0 rgb(168, 168, 168), 1px 1px 0 rgb(35, 61, 65),5px -1px 0 white, 3px 0 0 rgb(94, 47, 73);
+    margin: 0px 2px 1.2px 2px;
+    box-sizing: border-box;
+    border: dashed;
+    border-radius: 20px;
+  }
+
+    </style>
+    <div class="heading-2">
+        <h1>OLT QUESTIONS<br><br><br> - Communication Engg. <br></h1>
+
+    </div>
+
+    </div>
+    <div class="questions">
+        <!--heading of the chapter-->
+        <h2 style="text-align: center;">Pulse Modulation-UNIT-3</h2>
+
+
+
+
+        <!--Question 1-->
+        <p><b>Question.1</b><br>Aliasing effect is:- <br>
+                Overlapping of two samples. <br>
+                Oversampling of samples <br>
+                Sampling rate is equal to f_s=2f_m <br>
+                None of these <br>
+            </p>
+            <p><button onclick="answer1()"><b>Answer</b></button></p>
+            <div id="answer-1"> </div>
+            <script>
+                function answer1(){
+                    var x1=document.getElementById('answer-1');
+                    if(x1.innerHTML===" "){
+                        x1.innerHTML="Option (A)--Overlapping of two samples";
+                    }
+                    else{
+                        x1.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+
+    
+        <!--Question 2-->
+        <p><b>Question.2</b><br>Consider the signal m(t)=cosâ¡(100πt).what is the minimum sampling frequency required for no distortion. <br>
+            a) 25 Hz. <br>
+            b)100 Hz. <br>
+            c)100π Hz. <br>
+            d) None of these <br>
+        </p>
+        <p><button onclick="answer2()"><b>Answer</b></button></p>
+        <div id="answer-2"> </div>
+        <script>
+            function answer2(){
+                var x2=document.getElementById('answer-2');
+                if(x2.innerHTML===" "){
+                    x2.innerHTML="Option (B)-- b)100 Hz";
+                }
+                else{
+                    x2.innerHTML=" ";
+                 }
+                }   
+        </script>
+        <hr>
+
+        <!--Question 3-->
+        <p><b>Question.3</b><br>which of the following can be used to reconstruct message signal from sampled signal <br>
+            a) LPF <br>
+            B) Oscillator <br>
+            c) transmitter <br>
+            d) none of these <br>
+        </p>
+        <p><button onclick="answer3()"><b>Answer</b></button></p>
+        <div id="answer-3"> </div>
+        <script>
+            function answer3(){
+                var x3=document.getElementById('answer-3');
+                if(x3.innerHTML===" "){
+                    x3.innerHTML="Option (D)-- d) none of these";
+                }
+                else{
+                    x3.innerHTML=" ";
+                 }
+                }   
+        </script>
+        <hr>
+        <!--Question 4-->
+        <p><b>Question.4</b><br>The sequence of operations in which PCM is done is <br>
+            a. Sampling, quantizing, encoding <br>
+            b. Quantizing, encoding, sampling <br>
+            c. Quantizing, sampling, encoding <br>
+            d. None of the above <br>
+        </p>
+        <p><button onclick="answer4()"><b>Answer</b></button></p>
+        <div id="answer-4"> </div>
+        <script>
+            function answer4(){
+                var x4=document.getElementById('answer-4');
+                if(x4.innerHTML===" "){
+                    x4.innerHTML="Option (A)-- a. Sampling, quantizing, encoding ";
+                }
+                else{
+                    x4.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 5-->
+         <p><b>Question.5</b><br>In PCM, the parameter varied in accordance with the amplitude of the modulating signal is br
+            a. Amplitude <br>
+            b. Frequency <br>
+            c. Phase <br>
+            d. None of the above <br>
+        </p>
+        <p><button onclick="answer5()"><b>Answer</b></button></p>
+        <div id="answer-5"> </div>
+        <script>
+            function answer5(){
+                var x5=document.getElementById('answer-5');
+                if(x5.innerHTML===" "){
+                    x5.innerHTML="Option (D)- d. None of the above";
+                }
+                else{
+                    x5.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         
+         <!--Question 6-->
+         <p><b>Question.6</b><br>In uniform quantization process <br>
+            a. The step size remains same <br>
+            b. Step size varies according to the values of the input signal <br>
+            c. The quantizer has linear characteristics <br>
+            d. Both a and c are correct <br>
+            
+        </p>
+        <p><button onclick="answer6()"><b>Answer</b></button></p>
+        <div id="answer-6"> </div>
+        <script>
+            function answer6(){
+                var x6=document.getElementById('answer-6');
+                if(x6.innerHTML===" "){
+                    x6.innerHTML="Option (D)--  d. Both a and c are correct";
+                }
+                else{
+                    x6.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 7-->
+         <p><b>Question.7</b><br>The characteristics of compressor in μ-law companding are <br>
+            a. Continuous in nature <br>
+            b. Logarithmic in nature <br>
+            c. Linear in nature <br>
+            d. Discrete in nature <br>
+        </p>
+        <p><button onclick="answer7()"><b>Answer</b></button></p>
+        <div id="answer-7"> </div>
+        <script>
+            function answer7(){
+                var x7=document.getElementById('answer-7');
+                if(x7.innerHTML===" "){
+                    x7.innerHTML="Option (A)-- a. Continuous in nature";
+                }
+                else{
+                    x7.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+            <!--Question 8-->
+         <p><b>Question 8</b><br>The process of converting the analog sample into discrete form is called <br>
+            a. Modulation <br>
+            b. Multiplexing <br>
+            c. Quantization <br>
+            d. Sampling <br>
+        </p>
+        <p><button onclick="answer8()"><b>Answer</b></button></p>
+        <div id="answer-8"> </div>
+        <script>
+            function answer8(){
+                var x8=document.getElementById('answer-8');
+                if(x8.innerHTML===" "){
+                    x8.innerHTML="Option (C)-- c. Quantization";
+                }
+                else{
+                    x8.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 9-->
+         <p><b>Question.9</b><br>What is Synchronous TDM? <br>
+            a.gives same amount of time to each device <br>
+            b.gives same amount of frequency to each device <br>
+            c.gives variable time to each device <br>
+            d.gives variable frequency to each device <br>
+        </p>
+        <p><button onclick="answer9()"><b>Answer</b></button></p>
+        <div id="answer-9"> </div>
+        <script>
+            function answer9(){
+                var x9=document.getElementById('answer-9');
+                if(x9.innerHTML===" "){
+                    x9.innerHTML="Option (A)--a.gives same amount of time to each device";
+                }
+                else{
+                    x9.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 10-->
+         <p><b>Question.10</b><br>FDM is an analog multiplexing technique used to combines ________ <br>
+            a.analog signals <br>
+            b.digital signals <br>
+            c.both analog and digital signals <br>
+            d.alternatively passes analog and digital signals <br>
+        </p>
+        <p><button onclick="answer10()"><b>Answer</b></button></p>
+        <div id="answer-10"> </div>
+        <script>
+            function answer10(){
+                var x10=document.getElementById('answer-10');
+                if(x10.innerHTML===" "){
+                    x10.innerHTML="Option (a)--  a.analog signals";
+                }
+                else{
+                    x10.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <!--Question 11-->
+        <p><b>Question.11</b><br>Applications of Frequency-Division Multiplexing (FDM) are <br>
+            a.television broadcasting. <br>
+            b.AM and FM radio stations <br>
+            c.cellular telephones <br>
+            d.All of the above <br>
+         </p>
+         <p><button onclick="answer11()"><b>Answer</b></button></p>
+         <div id="answer-11"> </div>
+         <script>
+             function answer11(){
+                 var x11=document.getElementById('answer-11');
+                 if(x11.innerHTML===" "){
+                     x11.innerHTML="Option (d)--  d.All of the above";
+                 }
+                 else{
+                     x11.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 12-->
+          <p><b>Question.12</b><br>What are used to reduce or stop synchronization problems while receiving? <br>
+            a.Clock recovery circuits <br>
+            b.Demodulators <br>
+            c.Synchronizer <br>
+            d.Band pass filte <br>
+        </p>
+        <p><button onclick="answer12()"><b>Answer</b></button></p>
+         <div id="answer-12"> </div>
+         <script>
+             function answer12(){
+                 var x12=document.getElementById('answer-12');
+                 if(x12.innerHTML===" "){
+                     x12.innerHTML="Option (A)--a.Clock recovery circuits";
+                 }
+                 else{
+                     x12.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 13-->
+          <p><b>Question.13</b><br>The maximum data transmission rate in T1 carrier system is <br>
+            a. 2.6 megabits per second <br>
+            b. 1000 megabits per second <br>
+            c. 1.544 megabits per second <br>
+            d. 5.6 megabits per second <br>
+         </p>
+         <p><button onclick="answer13()"><b>Answer</b></button></p>
+         <div id="answer-13"> </div>
+         <script>
+             function answer13(){
+                 var x13=document.getElementById('answer-13');
+                 if(x13.innerHTML===" "){
+                     x13.innerHTML="Option (C)--c. 1.544 megabits per second";
+                 }
+                 else{
+                     x13.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 14-->
+          <p><b>Question.14</b><br>The number of voice channels that can be accommodated for transmission in T1 carrier system is <br>
+            a. 24 <br>
+            b. 32 <br>
+            c. 56 <br>
+            d. 64 <br>
+         </p>
+         <p><button onclick="answer14()"><b>Answer</b></button></p>
+         <div id="answer-14"> </div>
+         <script>
+             function answer14(){
+                 var x14=document.getElementById('answer-14');
+                 if(x14.innerHTML===" "){
+                     x14.innerHTML="Option (A)--  a. 24 ";
+                 }
+                 else{
+                     x14.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+         <!--Question 15-->
+         <p><b>Question.15</b><br>T1 carrier system is used <br>
+            a. For PCM voice transmission <br>
+            b. For delta modulation <br>
+            c. For frequency modulated signals <br>
+            d. None of the above <br>
+         </p>
+         <p><button onclick="answer15()"><b>Answer</b></button></p>
+         <div id="answer-15"> </div>
+         <script>
+             function answer15(){
+                 var x15=document.getElementById('answer-15');
+                 if(x15.innerHTML===" "){
+                     x15.innerHTML="Option (A)--  a. For PCM voice transmission";
+                 }
+                 else{
+                     x15.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+         <!--Question 16-->
+         <p><b>Question.16</b><br>The maximum data transmission rate in T2 carrier system is <br>
+            a. 6.312 megabits per second <br>
+            b. 1000 megabits per second <br>
+            c. 1.544 megabits per second <br>
+            d. 5.6 megabits per second <br>
+        </p>
+        <p><button onclick="answer16()"><b>Answer</b></button></p>
+        <div id="answer-16"> </div>
+        <script>
+            function answer16(){
+                var x16=document.getElementById('answer-16');
+                if(x16.innerHTML===" "){
+                    x16.innerHTML="Option (a)--  a. 6.312 megabits per second ";
+                }
+                else{
+                    x16.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <!--Question 17-->
+        <p><b>Question.17</b><br>The maximum data transmission rate in T3 carrier system is <br>
+            a. 6.312 megabits per second <br>
+            b. 44.736 megabits per second <br>
+            c. 1.544 megabits per second <br>
+            d. 5.6 megabits per second <br>
+         </p>
+         <p><button onclick="answer17()"><b>Answer</b></button></p>
+         <div id="answer-17"> </div>
+         <script>
+             function answer17(){
+                 var x17=document.getElementById('answer-17');
+                 if(x17.innerHTML===" "){
+                     x17.innerHTML="Option (B)--b. 44.736 megabits per second";
+                 }
+                 else{
+                     x17.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 18-->
+          <p><b>Question.18</b><br>DPCM is a technique <br>
+            a) To convert analog signal into digital signal <br>
+            b) Where difference between successive samples of the analog signals are encoded into n-bit data streams <br>
+            c) Where digital codes are the quantized values of the predicted value <br>
+            d) all of the above <br>
+        </p>
+        <p><button onclick="answer18()"><b>Answer</b></button></p>
+         <div id="answer-18"> </div>
+         <script>
+             function answer18(){
+                 var x18=document.getElementById('answer-18');
+                 if(x18.innerHTML===" "){
+                     x18.innerHTML="Option (D)--d) all of the above";
+                 }
+                 else{
+                     x18.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 19-->
+          <p><b>Question.19</b><br>DPCM suffers from <br>
+            a) slope over load distortion <br>
+            b) quantization noise <br>
+            c) both a) and b) <br>
+            d) none of the above <br>
+         </p>
+         <p><button onclick="answer19()"><b>Answer</b></button></p>
+         <div id="answer-19"> </div>
+         <script>
+             function answer19(){
+                 var x19=document.getElementById('answer-19');
+                 if(x19.innerHTML===" "){
+                     x19.innerHTML="Option (C)--c) both a) and b) ";
+                 }
+                 else{
+                     x19.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 20-->
+          <p><b>Question.20</b><br>In Differential Pulse Code Modulation techniques, the decoding is performed by <br>
+            a) Accumulator <br>
+            b) Sampler <br>
+            c) PLL <br>
+            d) Quantizer <br>
+         </p>
+         <p><button onclick="answer20()"><b>Answer</b></button></p>
+         <div id="answer-20"> </div>
+         <script>
+             function answer20(){
+                 var x20=document.getElementById('answer-20');
+                 if(x20.innerHTML===" "){
+                     x20.innerHTML="Option (A)--a) Accumulator ";
+                 }
+                 else{
+                     x20.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+         <!--Question 21-->
+         <p><b>Question.21</b><br>DPCM encodes the PCM values based on <br>
+            a) Quantization level <br>
+            b) Difference between the current and predicted value <br>
+            c) Interval between levels <br>
+            d) None of the mentioned <br>
+         </p>
+         <p><button onclick="answer21()"><b>Answer</b></button></p>
+         <div id="answer-21"> </div>
+         <script>
+             function answer21(){
+                 var x21=document.getElementById('answer-21');
+                 if(x21.innerHTML===" "){
+                     x21.innerHTML="Option (B)--b) Difference between the current and predicted value";
+                 }
+                 else{
+                     x21.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+         <hr>
+          <!--Question 22-->
+          <p><b>Question.22</b><br>Which of the following in not a technique for Analog to Digital Conversion <br>
+            a) PCM <br>
+            b) PAM <br>
+            c) DPCM <br>
+            d) DM <br>
+        </p>
+        <p><button onclick="answer22()"><b>Answer</b></button></p>
+         <div id="answer-22"> </div>
+         <script>
+             function answer22(){
+                 var x22=document.getElementById('answer-22');
+                 if(x22.innerHTML===" "){
+                     x22.innerHTML="Option (B)-- b) PAM";
+                 }
+                 else{
+                     x22.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 23-->
+          <p><b>Question.23</b><br>DPCM suffers from <br>
+            a) slope over load distortion <br>
+            b) quantization noise <br>
+            c) both a) and b) <br>
+            d) none of the above <br>
+         </p>
+         <p><button onclick="answer23()"><b>Answer</b></button></p>
+         <div id="answer-23"> </div>
+         <script>
+             function answer23(){
+                 var x23=document.getElementById('answer-23');
+                 if(x23.innerHTML===" "){
+                     x23.innerHTML="Option (C)--c) both a) and b) ";
+                 }
+                 else{
+                     x23.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 24-->
+          <p><b>Question.24</b><br>In Delta modulation,<br>
+            <br>
+            a) One bit per sample is transmitted <br>
+            b) All the coded bits used for sampling are transmitted <br>
+            c) The step size is fixed <br>
+            d) Both a) and c) are correct <br>
+         </p>
+         <p><button onclick="answer24()"><b>Answer</b></button></p>
+         <div id="answer-24"> </div>
+         <script>
+             function answer24(){
+                 var x24=document.getElementById('answer-24');
+                 if(x24.innerHTML===" "){
+                     x24.innerHTML="Option (d)-- d) Both a) and c) are correct ";
+                 }
+                 else{
+                     x24.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+         <!--Question 25-->
+         <p><b>Question.25</b><br>In digital transmission, the modulation technique that requires minimum bandwidth is <br>
+                <br>
+            a) Delta modulation <br>
+            b) PCM <br>
+            c) DPCM <br>
+            d) PAM <br>
+         </p>
+         <p><button onclick="answer25()"><b>Answer</b></button></p>
+         <div id="answer-25"> </div>
+         <script>
+             function answer25(){
+                 var x25=document.getElementById('answer-25');
+                 if(x25.innerHTML===" "){
+                     x25.innerHTML="Option (A)--a) Delta modulation";
+                 }
+                 else{
+                     x25.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+         <!--Question 26-->
+         <p><b>Question.26</b><br>In Delta Modulation, the bit rate is <br>
+            a) N times the sampling frequency <br>
+            b) N times the modulating frequency <br>
+            c) N times the nyquist criteria <br>
+            d) None of the above <br>
+            
+        </p>
+        <p><button onclick="answer26()"><b>Answer</b></button></p>
+        <div id="answer-26"> </div>
+        <script>
+            function answer26(){
+                var x26=document.getElementById('answer-26');
+                if(x26.innerHTML===" "){
+                    x26.innerHTML="Option (A)-- a) N times the sampling frequency";
+                }
+                else{
+                    x26.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 27-->
+         <p><b>Question.27</b><br>Granular noise occurs when <br>
+            <br>
+            a)Step size is too small <br>
+            b)Step size is too large <br>
+            c)There is interference from the adjacent channel <br>
+            d)Bandwidth is too large <br>
+        </p>
+        <p><button onclick="answer27()"><b>Answer</b></button></p>
+        <div id="answer-27"> </div>
+        <script>
+            function answer27(){
+                var x27=document.getElementById('answer-27');
+                if(x27.innerHTML===" "){
+                    x27.innerHTML="Option (B)--b)Step size is too large";
+                }
+                else{
+                    x27.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+            <!--Question 28-->
+         <p><b>Question 28</b><br>The factors that cause quantizing error in delta modulation are <br>
+            <br> 
+            a)Slope overload distortion <br>
+            b)Granular noise <br>
+            c)White noise <br>
+            d)Both a and b are correct <br>
+        </p>
+        <p><button onclick="answer28()"><b>Answer</b></button></p>
+        <div id="answer-28"> </div>
+        <script>
+            function answer28(){
+                var x28=document.getElementById('answer-28');
+                if(x28.innerHTML===" "){
+                    x28.innerHTML="Option (D)--d)Both a and b are correc";
+                }
+                else{
+                    x28.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 29-->
+         <p><b>Question.29</b><br>The digital modulation technique in which the step size is varied according to the variation in the slope of the input is called <br>
+             <br>   
+            a. Delta modulation <br>
+            b. PCM <br>
+            c. Adaptive delta modulation <br>
+            d. PAM <br>
+        </p>
+        <p><button onclick="answer29()"><b>Answer</b></button></p>
+        <div id="answer-29"> </div>
+        <script>
+            function answer29(){
+                var x29=document.getElementById('answer-29');
+                if(x29.innerHTML===" "){
+                    x29.innerHTML="Option (C)-- c. Adaptive delta modulation";
+                }
+                else{
+                    x29.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 30-->
+         <p><b>Question.30</b><br>DPCM is a technique <br>
+             <br>
+            a. To convert analog signal into digital signal <br>
+            b. Where difference between successive samples of the analog signals are encoded into n-bit data streams <br>
+            c. Where digital codes are the quantized values of the predicted value <br>
+            d. All of the above <br>    
+        </p>
+        <p><button onclick="answer30()"><b>Answer</b></button></p>
+        <div id="answer-30"> </div>
+        <script>
+            function answer30(){
+                var x30=document.getElementById('answer-30');
+                if(x30.innerHTML===" "){
+                    x30.innerHTML="Option (D)-- d. All of the above";
+                }
+                else{
+                    x30.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <!--Question 31-->
+        <p><b>Question.31</b><br>In Differential Pulse Code Modulation techniques, the decoding is performed by <br>
+            <br>
+            a. Accumulator <br>
+            b. Sampler <br>
+            c. PLL <br>
+            d. Quantizer <br>
+         </p>
+         <p><button onclick="answer31()"><b>Answer</b></button></p>
+         <div id="answer-31"> </div>
+         <script>
+             function answer31(){
+                 var x31=document.getElementById('answer-31');
+                 if(x31.innerHTML===" "){
+                     x31.innerHTML="Option (A)--a. Accumulator";
+                 }
+                 else{
+                     x31.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 32-->
+          <p><b>Question.32</b><br>Granular noise occurs when <br>
+            <br>
+            a. Step size is too small <br>
+            b. Step size is too large <br>
+            c. There is interference from the adjacent channel <br>
+            d. Bandwidth is too large <br>
+        </p>
+        <p><button onclick="answer32()"><b>Answer</b></button></p>
+         <div id="answer-32"> </div>
+         <script>
+             function answer32(){
+                 var x32=document.getElementById('answer-32');
+                 if(x32.innerHTML===" "){
+                     x32.innerHTML="Option (B)--b. Step size is too large";
+                 }
+                 else{
+                     x32.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+         <!--Question 33-->
+         <p><b>Question.33</b><br> DPCM suffers from <br>
+            <br>
+            a. Slope over load distortion <br>
+            b. Quantization noise <br>
+            c. Both a & b <br>
+            d. None of the above <br>
+         </p>
+         <p><button onclick="answer33()"><b>Answer</b></button></p>
+         <div id="answer-33"> </div>
+         <script>
+             function answer33(){
+                 var x33=document.getElementById('answer-33');
+                 if(x33.innerHTML===" "){
+                     x33.innerHTML="Option (D)--d. None of the above";
+                 }
+                 else{
+                     x33.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 34-->
+          <p><b>Question.34</b><br>If ground is applied to the (+) terminal of an inverting op-amp, the (–) terminal will <br>
+            A. Not need an input resistor <br>
+            B. Be virtual ground <br>
+            C. Have high reverse current <br>
+            D. Not invert the signal <br>
+         </p>
+         <p><button onclick="answer34()"><b>Answer</b></button></p>
+         <div id="answer-34"> </div>
+         <script>
+             function answer34(){
+                 var x34=document.getElementById('answer-34');
+                 if(x34.innerHTML===" "){
+                     x34.innerHTML="Option (B)--B. Be virtual ground";
+                 }
+                 else{
+                     x34.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+         <!--Question 35-->
+         <p><b>Question.35</b><br>In Binary Phase Shift Keying system, the binary symbols 1 and 0 are represented by carrier with phase shift of <br>
+             <br>
+            a. Π/2 <br>
+            b. Π <br>
+            c. 2Π <br>
+            d. 0 <br>
+         </p>
+         <p><button onclick="answer35()"><b>Answer</b></button></p>
+         <div id="answer-35"> </div>
+         <script>
+             function answer35(){
+                 var x35=document.getElementById('answer-35');
+                 if(x35.innerHTML===" "){
+                     x35.innerHTML="Option (B)--b. Π";
+                 }
+                 else{
+                     x35.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+         <!--Question 36-->
+         <p><b>Question.36</b><br>In Binary FSK, mark and space respectively represent <br>
+            a. 1 and 0 <br> 
+            b. 0 and 1 <br>
+            c. 11 and 00 <br>
+            d. 00 and 11 <br>
+        </p>
+        <p><button onclick="answer36()"><b>Answer</b></button></p>
+        <div id="answer-36"> </div>
+        <script>
+            function answer36(){
+                var x36=document.getElementById('answer-36');
+                if(x36.innerHTML===" "){
+                    x36.innerHTML="Option (a)--a. 1 and 0";
+                }
+                else{
+                    x36.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <!--Question 37-->
+        <p><b>Question.37</b><br>The BPSK signal has +V volts and -V volts respectively to represent <br>
+             <br>
+            a. 1 and 0 logic levels <br>
+            b. 11 and 00 logic levels <br>
+            c. 10 and 01 logic levels <br>
+            d. 00 and 11 logic levels <br>
+         </p>
+         <p><button onclick="answer37()"><b>Answer</b></button></p>
+         <div id="answer-37"> </div>
+         <script>
+             function answer37(){
+                 var x37=document.getElementById('answer-37');
+                 if(x37.innerHTML===" "){
+                     x37.innerHTML="Option (A)--a. 1 and 0 logic levels";
+                 }
+                 else{
+                     x37.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 38-->
+          <p><b>Question.38</b><br>The binary waveform used to generate BPSK signal is encoded in <br>
+            <br>
+            a. Bipolar NRZ format <br>
+            b. Manchester coding <br>
+            c. Differential coding <br>
+            d. None of the above <br>
+        </p>
+        <p><button onclick="answer38()"><b>Answer</b></button></p>
+         <div id="answer-38"> </div>
+         <script>
+             function answer38(){
+                 var x38=document.getElementById('answer-38');
+                 if(x38.innerHTML===" "){
+                     x38.innerHTML="Option (A)--a. Bipolar NRZ format";
+                 }
+                 else{
+                     x38.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 39-->
+          <p><b>Question.39</b><br>BPSK system modulates at the rate of <br>
+            <br>
+            a. 1 bit/ symbol <br>
+            b. 2 bit/ symbol <br>
+            c. 4 bit/ symbol <br>
+            d. None of the above <br>
+         </p>
+         <p><button onclick="answer39()"><b>Answer</b></button></p>
+         <div id="answer-39"> </div>
+         <script>
+             function answer39(){
+                 var x39=document.getElementById('answer-39');
+                 if(x39.innerHTML===" "){
+                     x39.innerHTML="Option (A)--a. 1 bit/ symbol";
+                 }
+                 else{
+                     x39.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 40-->
+          <p><b>Question.40</b><br>In Binary Phase Shift Keying system, the binary symbols 1 and 0 are represented by carrier with phase shift of <br>
+            <br>
+            a. Π/2 <br>
+            b. Π <br>
+            c. 2Π <br>
+            d. 0 <br>
+         </p>
+         <p><button onclick="answer40()"><b>Answer</b></button></p>
+         <div id="answer-40"> </div>
+         <script>
+             function answer40(){
+                 var x40=document.getElementById('answer-40');
+                 if(x40.innerHTML===" "){
+                     x40.innerHTML="Option (B)--b. Π ";
+                 }
+                 else{
+                     x40.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+         <h1 style="text-align: center;">END</h1>
+ 
+
+
+    </div>
+
+
+
+</body>
+</html>

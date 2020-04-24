@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        *{
+  margin-top: 0;
+  padding-top: 0;
+}
+body {
+    font-family: "Lato", sans-serif;
+    background-color:rgb(175, 170, 125);
+    color:black;
+    line-height: 1.6em;
+  
+  }
+  
+  .heading-1{
+    background-color: grey;
+    font-family: cursive;
+    text-align: center;
+    padding:20px;
+    font-size: 30px;
+    text-shadow:4px 0 0 rgb(168, 168, 168), 1px 1px 0 rgb(35, 61, 65),5px -1px 0 white, 3px 0 0 rgb(94, 47, 73);
+    margin: 0px 2px 1.2px 2px;
+    box-sizing: border-box;
+    border: dashed;
+    border-radius: 20px;
+  }
+
+    </style>
+    <div class="heading-1">
+        <h1>OLT QUESTIONS<br><br><br> - Data Structure <br></h1>
+
+    </div>
+    <div class="questions">
+        <!--heading of the chapter-->
+        <h2 style="text-align: center;">TREE-UNIT-3</h2>
+
+        <!--Question 1-->
+        <p><b> Question.1</b><br>The number of edges from the root to the node is called __________ of the tree. <br>
+
+            a) Height <br> 
+            b) Depth <br>
+            c) Length <br>
+            d) Width <br>
+        </p>
+        <p><button onclick="answer1()"><b>Answer</b></button></p>
+        <div id="answer-1"> </div>
+        <script>
+            function answer1(){
+                var x1=document.getElementById('answer-1');
+                if(x1.innerHTML===" "){
+                    x1.innerHTML="Option (B)--b) Depth";
+                }
+                else{
+                    x1.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+
+        <!--Question 2-->
+        <p><b> Question.2</b><br>The number of edges from the node to the deepest leaf is called _________ of the tree. <br> 
+
+            a) Height <br>
+            b) Depth <br>
+            c) Length <br>
+            d) Width <br>
+        </p>
+        <p><button onclick="answer2()"><b>Answer</b></button></p>
+        <div id="answer-2"> </div>
+        <script>
+            function answer2(){
+                var x2=document.getElementById('answer-2');
+                if(x2.innerHTML===" "){
+                    x2.innerHTML="Option (A)-- a) Height";
+                }
+                else{
+                    x2.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <!--Question 3-->
+        <p><b>Question.3</b><br>The following given tree is an example for? <br>
+                    10 <br>
+                   /  \ <br>
+                  16   10 <br>
+            a) Binary tree <br> 
+            b) Binary search tree <br>
+            c) Fibonacci tree <br>
+            d) AVL tree <br>
+       </p>
+       <p><button onclick="answer3()"><b>Answer</b></button></p>
+       <div id="answer-3"> </div>
+       <script>
+           function answer3(){
+               var x3=document.getElementById('answer-3');
+               if(x3.innerHTML===" "){
+                   x3.innerHTML="Option (A)--a) Binary tree";
+               }
+               else{
+                   x3.innerHTML=" ";
+               }
+           }
+       </script>
+       <hr>
+               <!--Question 4-->
+               <p><b>Question.4</b><br>A binary tree is a rooted tree but not an ordered tree. <br>
+
+                a) true <br> 
+                b) false <br>
+                
+            </p>
+            <p><button onclick="answer4()"><b>Answer</b></button></p>
+            <div id="answer-4"> </div>
+            <script>
+                function answer4(){
+                    var x4=document.getElementById('answer-4');
+                    if(x4.innerHTML===" "){
+                        x4.innerHTML="Option (b)--b.false";
+                    }
+                    else{
+                        x4.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+             <!--Question 5-->
+             <p><b>Question.5</b><br>What is/are the disadvantages of implementing tree using normal arrays? <br>
+
+                a) difficulty in knowing children nodes of a node <br>
+                b) difficult in finding the parent of a node <br>
+                c) have to know the maximum number of nodes possible before creation of trees <br>
+                d) difficult to implement <br>
+            </p>
+            <p><button onclick="answer5()"><b>Answer</b></button></p>
+            <div id="answer-5"> </div>
+            <script>
+                function answer5(){
+                    var x5=document.getElementById('answer-5');
+                    if(x5.innerHTML===" "){
+                        x5.innerHTML="Option (C)--  c) have to know the maximum number of nodes possible before creation of trees";
+                    }
+                    else{
+                        x5.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+             
+             <!--Question 6-->
+             <p><b>Question.6</b><br>What is the parent for a node ‘w’ of a complete binary tree in an array representation when w is not 0? <br>
+                a) floor(w-1/2) <br>  b) ceil(w-1/2) <br> c) w-1/2 <br> d) w/2 <br>
+            </p>
+            <p><button onclick="answer6()"><b>Answer</b></button></p>
+            <div id="answer-6"> </div>
+            <script>
+                function answer6(){
+                    var x6=document.getElementById('answer-6');
+                    if(x6.innerHTML===" "){
+                        x6.innerHTML="Option (A)--a) floor(w-1/2)";
+                    }
+                    else{
+                        x6.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+             <!--Question 7-->
+             <p><b>Question.7</b><br>What is a full binary tree? <br>
+                a) Each node has exactly zero or two children <br>
+                b) Each node has exactly two children <br>
+                c) All the leaves are at the same level <br>
+                d) Each node has exactly one or two children <br>
+            </p>
+            <p><button onclick="answer7()"><b>Answer</b></button></p>
+            <div id="answer-7"> </div>
+            <script>
+                function answer7(){
+                    var x7=document.getElementById('answer-7');
+                    if(x7.innerHTML===" "){
+                        x7.innerHTML="Option (A)--a) Each node has exactly zero or two children ";
+                    }
+                    else{
+                        x7.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+                <!--Question 8-->
+             <p><b>Question 8</b><br>What is a complete binary tree? <br>
+                a) Each node has exactly zero or two children <br>
+                b) A binary tree, which is completely filled, with the possible exception of the bottom level, which is filled from right to left <br>
+                c) A binary tree, which is completely filled, with the possible exception of the bottom level, which is filled from left to right <br>
+                d) A tree In which all nodes have degree 2 <br>
+            </p>
+            <p><button onclick="answer8()"><b>Answer</b></button></p>
+            <div id="answer-8"> </div>
+            <script>
+                function answer8(){
+                    var x8=document.getElementById('answer-8');
+                    if(x8.innerHTML===" "){
+                        x8.innerHTML="Option (C)--c) A binary tree, which is completely filled, with the possible exception of the bottom level, which is filled from left to right";
+                    }
+                    else{
+                        x8.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+             <!--Question 9-->
+             <p><b>Question.9</b><br>If the tree is not a complete binary tree then what changes can be made for easy access of children of a node in the array? <br>
+                a) every node stores data saying which of its children exist in the array <br>
+                b) no need of any changes continue with 2w and 2w+1, if node is at i <br>
+                c) keep a separate table telling children of a node <br>
+                d) use another array parallel to the array with tree <br>
+            </p>
+            <p><button onclick="answer9()"><b>Answer</b></button></p>
+            <div id="answer-9"> </div>
+            <script>
+                function answer9(){
+                    var x9=document.getElementById('answer-9');
+                    if(x9.innerHTML===" "){
+                        x9.innerHTML="Option (A)--a) every node stores data saying which of its children exist in the array ";
+                    }
+                    else{
+                        x9.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+             <!--Question 10-->
+             <p><b>Question.10</b><br>In a full binary tree if there are L leaves, then total number of nodes N are? <br>
+                a) N = 2*L <br> b) N = L + 1 <br> c) N = L – 1 <br> d) N = 2*L – 1 <br>
+                
+                
+            </p>
+            <p><button onclick="answer10()"><b>Answer</b></button></p>
+            <div id="answer-10"> </div>
+            <script>
+                function answer10(){
+                    var x10=document.getElementById('answer-10');
+                    if(x10.innerHTML===" "){
+                        x10.innerHTML="Option (D)-- d) N = 2*L – 1 ";
+                    }
+                    else{
+                        x10.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+            <!--Question 11-->
+            <p><b>Question.11</b><br>How many children does a binary tree have?<br>
+                a)  2  <br>
+                b)  any <br>
+                c)  0 or 1 or 2 <br> 
+                d)  0 or 1 <br>
+            </p>
+            <p><button onclick="answer11()"><b>Answer</b></button></p>
+            <div id="answer-11"> </div>
+            <script>
+                function answer11(){
+                    var x11=document.getElementById('answer-11');
+                    if(x11.innerHTML===" "){
+                        x11.innerHTML="Option (C)-- c)  0 or 1 or 2";
+                    }
+                    else{
+                        x11.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+             <!--Question 12-->
+             <p><b>Question.12</b><br>Level of a node is distance from root to that <br>
+                For example, level of root is 1 & level of left and right children of root is 2. <br>
+                The maximum number of nodes on level “i” of a binary tree is? <br>
+                 <br>
+                 <br>
+                a) 2^(i)-1  <br>
+                b)  2^i <br>
+                c)  2^(i+1)  <br>
+                d)  2^[(i+1)/2] <br>
+            <p><button onclick="answer12()"><b>Answer</b></button></p> 
+            <div id="answer-12"> </div>
+            <script>
+                function answer12(){
+                    var x12=document.getElementById('answer-12');
+                    if(x12.innerHTML===" "){
+                        x12.innerHTML="Option (a)-a) 2^(i)-1  ";
+                    }
+                    else{
+                        x12.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+             <!--Question 13-->
+             <p><b>Question.13</b><br>In a binary search tree, which of the following traversals would print the numbers in the ascending order? <br>
+                a)  Level-order traversal <br>
+                b)  Pre-order traversal <br>
+                c)  Post-order traversal  <br>
+                d)  In-order traversal <br>
+            </p>
+            <p><button onclick="answer13()"><b>Answer</b></button></p>
+            <div id="answer-13"> </div>
+            <script>
+                function answer13(){
+                    var x13=document.getElementById('answer-13');
+                    if(x13.innerHTML===" "){
+                        x13.innerHTML="Option (D)--d)  In-order traversal";
+                    }
+                    else{
+                        x13.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+             <!--Question 14-->
+             <p><b>Question.14</b><br>The number of leaf nodes in a rooted tree of n nodes, with each node having 0 or 3 number of children is? <br>
+                    <br>
+ <br>
+                a)  n/2 <br>
+                b) (n-1)/3 <br>
+                c)  (n-1)/2  <br>
+                d)  (2n+1)/3 <br>
+            </p>
+            <p><button onclick="answer14()"><b>Answer</b></button></p>
+            <div id="answer-14"> </div>
+            <script>
+                function answer14(){
+                    var x14=document.getElementById('answer-14');
+                    if(x14.innerHTML===" "){
+                        x14.innerHTML="Option (D)-- d)  (2n+1)/3";
+                    }
+                    else{
+                        x14.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+            <!--Question 15-->
+            <p><b>Question.15</b><br>Iwhich of the following traversing algorithm is not used to traverse in a tree? <br>
+                a)  Post order <br> b)  Pre order <br> c)  No order <br> d)  Randomized <br>
+            </p>
+            <p><button onclick="answer15()"><b>Answer</b></button></p>
+            <div id="answer-15"> </div>
+            <script>
+                function answer15(){
+                    var x15=document.getElementById('answer-15');
+                    if(x15.innerHTML===" "){
+                        x15.innerHTML="Option (d)-- d)  Randomized";
+                    }
+                    else{
+                        x15.innerHTML=" ";
+                    }
+                }
+            </script>
+            <hr>
+            <!--Question 16-->
+         <p><b>Question.16</b><br>Advantages of linked list representation of binary trees over arrays? <br>
+            (A) dynamic size <br>
+            (B) ease of insertion/deletion <br>
+            (C) ease in randomly accessing a node  <br>
+            (D) dynamic size and ease in insertion/deletion <br>
+        </p>
+        <p><button onclick="answer16()"><b>Answer</b></button></p>
+        <div id="answer-16"> </div>
+        <script>
+            function answer16(){
+                var x16=document.getElementById('answer-16');
+                if(x16.innerHTML===" "){
+                    x16.innerHTML="Option (D)--(D) dynamic size and ease in insertion/deletion ";
+                }
+                else{
+                    x16.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <!--Question 17-->
+        <p><b>Question.17</b><br>Suppose the numbers 7, 5, 1, 8, 3, 6, 0, 9, 4, 2 are inserted in that order into an initially empty binary search tree. The binary search tree uses the usual ordering on natural numbers. What is the in-order traversal sequence of the resultant tree? <br>
+            (A)  7 5 1 0 3 2 4 6 8 9 <br>
+            (B)  0 2 4 3 1 6 5 9 8 7 <br>
+            (C)  0 1 2 3 4 5 6 7 8 9 <br>
+            (D)  9 8 6 4 2 3 0 1 5 7 <br>
+         </p>
+         <p><button onclick="answer17()"><b>Answer</b></button></p>
+         <div id="answer-17"> </div>
+         <script>
+             function answer17(){
+                 var x17=document.getElementById('answer-17');
+                 if(x17.innerHTML===" "){
+                     x17.innerHTML="Option (C)--(C)  0 1 2 3 4 5 6 7 8 9";
+                 }
+                 else{
+                     x17.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 18-->
+          <p><b>Question.18</b><br>The following numbers are inserted into an empty binary search tree in the given order: 10, 1, 3, 5, 15, 12, 16. What is the height of the binary search tree (the height is the maximum distance of a leaf node from the root)? <br>
+            (A)2 <br>
+            (B)3 <br>
+            (C)4 <br>
+            (D)6 <br>
+        </p>
+        <p><button onclick="answer18()"><b>Answer</b></button></p>
+         <div id="answer-18"> </div>
+         <script>
+             function answer18(){
+                 var x18=document.getElementById('answer-18');
+                 if(x18.innerHTML===" "){
+                     x18.innerHTML="Option (B)--(B)3";
+                 }
+                 else{
+                     x18.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 19-->
+          <p><b>Question.19</b><br>The preorder traversal sequence of a binary search tree is 30, 20, 10, 15, 25, 23, 39, 35, 42. Which one of the following is the postorder traversal sequence of the same tree? <br>
+            (A)  10, 20, 15, 23, 25, 35, 42, 39, 30 <br>
+            (B)  15, 10, 25, 23, 20, 42, 35, 39, 30 <br>
+            (C)  15, 20, 10, 23, 25, 42, 35, 39, 30 <br>
+            (D)  15, 10, 23, 25, 20, 35, 42, 39, 30 <br>
+         </p>
+         <p><button onclick="answer19()"><b>Answer</b></button></p>
+         <div id="answer-19"> </div>
+         <script>
+             function answer19(){
+                 var x19=document.getElementById('answer-19');
+                 if(x19.innerHTML===" "){
+                     x19.innerHTML="Option (D)--D)  15, 10, 23, 25, 20, 35, 42, 39, 30 ";
+                 }
+                 else{
+                     x19.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 20-->
+          <p><b>Question.20</b><br>Let LASTPOST, LASTIN and LASTPRE denote the last vertex visited in a postorder, inorder and preorder traversal. Respectively, of a complete binary tree. Which of the following is always true? <br>
+            (A)  LASTIN = LASTPOST <br>
+            (B)  LASTIN = LASTPRE <br>
+            (C)  LASTPRE = LASTPOST <br>
+            (D)  None of the above <br>
+         </p>
+         <p><button onclick="answer20()"><b>Answer</b></button></p>
+         <div id="answer-20"> </div>
+         <script>
+             function answer20(){
+                 var x20=document.getElementById('answer-20');
+                 if(x20.innerHTML===" "){
+                     x20.innerHTML="Option (D)--(D)  None of the above ";
+                 }
+                 else{
+                     x20.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+         <!--Question 21-->
+         <p><b>Question.21</b><br>What is the speciality about the inorder traversal of a binary search tree?<br>
+            a) It traverses in a non increasing order <br>
+            b) It traverses in an increasing order <br>
+            c) It traverses in a random fashion <br>
+            d) It traverses based on priority of the node <br>
+         </p>
+         <p><button onclick="answer21()"><b>Answer</b></button></p>
+         <div id="answer-21"> </div>
+         <script>
+             function answer21(){
+                 var x21=document.getElementById('answer-21');
+                 if(x21.innerHTML===" "){
+                     x21.innerHTML="Option (B)--b) It traverses in an increasing order";
+                 }
+                 else{
+                     x21.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 22-->
+          <p><b>Question.22</b><br>What are the worst case and average case complexities of a binary search tree? <br>
+            a) O(n), O(n) <br>
+            b) O(logn), O(logn) <br>
+            c) O(logn), O(n) <br>
+            d) O(n), O(logn) <br>
+        </p>
+        <p><button onclick="answer22()"><b>Answer</b></button></p>
+         <div id="answer-22"> </div>
+         <script>
+             function answer22(){
+                 var x22=document.getElementById('answer-22');
+                 if(x22.innerHTML===" "){
+                     x22.innerHTML="Option (D)--d) O(n), O(logn)";
+                 }
+                 else{
+                     x22.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 23-->
+          <p><b>Question.23</b><br>What are the conditions for an optimal binary search tree and what is its advantage? <br>
+            a) The tree should not be modified and you should know how often the keys are accessed, it improves the lookup cost <br>
+            b) You should know the frequency of access of the keys, improves the lookup time <br>
+            c) The tree can be modified and you should know the number of elements in the tree before hand, it improves the deletion time <br>
+            d) The tree should be just modified and improves the lookup time <br>
+         </p>
+         <p><button onclick="answer23()"><b>Answer</b></button></p>
+         <div id="answer-23"> </div>
+         <script>
+             function answer23(){
+                 var x23=document.getElementById('answer-23');
+                 if(x23.innerHTML===" "){
+                     x23.innerHTML="Option (A)-a) The tree should not be modified and you should know how often the keys are accessed, it improves the lookup cost ";
+                 }
+                 else{
+                     x23.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+           <!--Question 24-->
+           <p><b>Question.24</b><br>How many distinct binary search trees can be created out of 4 distinct keys? <br>
+            A. 4 <br>
+            B. 14 <br>
+            C. 24 <br>
+            D. 42 <br>
+        </p>
+        <p><button onclick="answer24()"><b>Answer</b></button></p>
+        <div id="answer-24"> </div>
+        <script>
+            function answer24(){
+                var x24=document.getElementById('answer-24');
+                if(x24.innerHTML===" "){
+                    x24.innerHTML="Option (B)--  B. 14";
+                }
+                else{
+                    x24.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 25-->
+         <p><b>Question.25</b><br>Which of the following traversals is sufficient to construct BST from given traversals 1) Inorder 2) Preorder 3) Postorder <br>
+            A. Any one of the given three traversals is sufficient <br>
+            B. Either 2 or 3 is sufficient <br>
+            C. 2 and 3 <br>
+            D. 1 and 3 <br>
+        </p>
+        <p><button onclick="answer25()"><b>Answer</b></button></p>
+        <div id="answer-25"> </div>
+        <script>
+            function answer25(){
+                var x25=document.getElementById('answer-25');
+                if(x25.innerHTML===" "){
+                    x25.innerHTML="Option (B)--B. Either 2 or 3 is sufficient";
+                }
+                else{
+                    x25.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         
+         <!--Question 26-->
+         <p><b>Question.26</b><br>In what time can a binary heap be built? <br>
+            a) O(N) <br>
+            b) O(N log N) <br>
+            c) O(log N) <br>
+            d) O(N2) <br>
+        </p>
+        <p><button onclick="answer26()"><b>Answer</b></button></p>
+        <div id="answer-26"> </div>
+        <script>
+            function answer26(){
+                var x26=document.getElementById('answer-26');
+                if(x26.innerHTML===" "){
+                    x26.innerHTML="Option (A)--a) O(N)";
+                }
+                else{
+                    x26.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 27-->
+         <p><b>Question.27</b><br>In what position does the array for heap sort contains data?<br>
+            a) 0 <br>
+            b) 1 <br>
+            c) -1 <br>
+            d) anywhere in the array <br>
+        </p>
+        <p><button onclick="answer27()"><b>Answer</b></button></p>
+        <div id="answer-27"> </div>
+        <script>
+            function answer27(){
+                var x27=document.getElementById('answer-27');
+                if(x27.innerHTML===" "){
+                    x27.innerHTML="Option (A)--a) 0";
+                }
+                else{
+                    x27.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+            <!--Question 28-->
+         <p><b>Question 28</b><br>In heap sort, after deleting the last minimum element, the array will contain elements in? <br>
+            a) increasing sorting order <br>
+            b) decreasing sorting order <br>
+            c) tree inorder <br>
+            d) tree preorder <br>
+        </p>
+        <p><button onclick="answer28()"><b>Answer</b></button></p>
+        <div id="answer-28"> </div>
+        <script>
+            function answer28(){
+                var x28=document.getElementById('answer-28');
+                if(x28.innerHTML===" "){
+                    x28.innerHTML="Option (B)-- b) decreasing sorting order";
+                }
+                else{
+                    x28.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 29-->
+         <p><b>Question.29</b><br>How many arrays are required to perform deletion operation in a heap? <br>
+            a) 1 <br>
+            b) 2 <br>
+            c) 3 <br>
+            d) 4 <br>
+        </p>
+        <p><button onclick="answer29()"><b>Answer</b></button></p>
+        <div id="answer-29"> </div>
+        <script>
+            function answer29(){
+                var x29=document.getElementById('answer-29');
+                if(x29.innerHTML===" "){
+                    x29.innerHTML="Option (B)--b) 2";
+                }
+                else{
+                    x29.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 30-->
+         <p><b>Question.30</b><br>On which algorithm is heap sort based on? <br>
+            a) Fibonacci heap <br>
+            b) Binary tree <br>
+            c) Priority queue <br>
+            d) FIFO <br>
+        </p>
+        <p><button onclick="answer30()"><b>Answer</b></button></p>
+        <div id="answer-30"> </div>
+        <script>
+            function answer30(){
+                var x30=document.getElementById('answer-30');
+                if(x30.innerHTML===" "){
+                    x30.innerHTML="Option (C)-- c) Priority queue";
+                }
+                else{
+                    x30.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <!--Question 31-->
+        <p><b>Question.31</b><br>What may be the content of a node in threaded binary tree? <br>
+            a) leftchild_pointer, left_tag <br>
+            b) leftchild_pointer, left_tag, data, right_tag, rightchild_pointer <br>
+            c) leftchild_pointer, left_tag, right_tag, rightchild_pointer <br>
+            d) leftchild_pointer, left_tag, data <br>
+         </p>
+         <p><button onclick="answer31()"><b>Answer</b></button></p>
+         <div id="answer-31"> </div>
+         <script>
+             function answer31(){
+                 var x31=document.getElementById('answer-31');
+                 if(x31.innerHTML===" "){
+                     x31.innerHTML="Option (A)--b) leftchild_pointer, left_tag, data, right_tag, rightchild_pointer";
+                 }
+                 else{
+                     x31.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+         <h1 style="text-align: center;">END</h1>
+
+        </div>
+</body>
+</html>

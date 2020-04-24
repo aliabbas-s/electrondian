@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        *{
+  margin-top: 0;
+  padding-top: 0;
+}
+body {
+    font-family: "Lato", sans-serif;
+    background-color:grey;
+    color:black;
+    line-height: 1.6em;
+  
+  }
+  
+  .heading-1{
+    background-color: #c4b9b9;
+    font-family: cursive;
+    text-align: center;
+    padding:20px;
+    font-size: 30px;
+    text-shadow:4px 0 0 rgb(168, 168, 168), 1px 1px 0 rgb(35, 61, 65),5px -1px 0 white, 3px 0 0 rgb(94, 47, 73);
+    margin: 0px 2px 1.2px 2px;
+    box-sizing: border-box;
+    border: dashed;
+    border-radius: 20px;
+  }
+
+    </style>
+    <div class="heading-1">
+        <h1>OLT QUESTIONS<br><br><br> - Signal And System <br></h1>
+
+    </div>
+    <div class="questions">
+        <!--heading of the chapter-->
+        <h2 style="text-align: center;">Z-Transform-UNIT-4</h2>
+
+
+
+
+        <!--Question 1-->
+        <p><b>Question.1</b><br>Convolution in time domain is equal to: <br>
+            Convolution in Z-domain <br>
+            Multiplication in Z-domain <br>
+            Addition in Z-domain <br>
+            None of the above <br>
+            </p>
+            <p><button onclick="answer1()"><b>Answer</b></button></p>
+            <div id="answer-1"> </div>
+            <script>
+                function answer1(){
+                    var x1=document.getElementById('answer-1');
+                    if(x1.innerHTML===" "){
+                        x1.innerHTML="Option (B)--Multiplication in Z-domain";
+                    }
+                    else{
+                        x1.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+
+    
+        <!--Question 2-->
+        <p><b> Question.2</b><br>Z transform of x (n) = n u (n) <br>
+            a) 1/(1-z-1 ) <br>
+            b) z-1/(1-z-1 ) <br>
+            c) z-1/(1-z-1 )2 <br>
+            d) z-1/(1-z-1 )-2 <br>
+        </p>
+        <p><button onclick="answer2()"><b>Answer</b></button></p>
+        <div id="answer-2"> </div>
+        <script>
+            function answer2(){
+                var x2=document.getElementById('answer-2');
+                if(x2.innerHTML===" "){
+                    x2.innerHTML="Option (C)-- c) z-1/(1-z-1 )2";
+                }
+                else{
+                    x2.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+
+        <!--Question 3-->
+        <p><b>Question.3</b><br>Z- transform of x (n) = δ[n+k] is- <br>
+            a) zk <br>
+            b) z-k <br>
+            c) zn <br>
+            d) z-n <br>
+        </p>
+        <p><button onclick="answer3()"><b>Answer</b></button></p>
+        <div id="answer-3"> </div>
+        <script>
+            function answer3(){
+                var x3=document.getElementById('answer-3');
+                if(x3.innerHTML===" "){
+                    x3.innerHTML="Option (D)--  d) z-n";
+                }
+                else{
+                    x3.innerHTML=" ";
+                 }
+                }   
+        </script>
+        <hr>
+        <!--Question 4-->
+        <p><b>Question.4</b><br>Initial value of the signal X (z) = 2+z-1 / (1+0.5z-1)(1-z-1) <br>
+            a) x(0) = 2 <br> 
+            b) x(∞) =2 <br>
+            c) x(0) = 0 <br>
+            d) x(∞) =0 <br>
+        </p>
+        <p><button onclick="answer4()"><b>Answer</b></button></p>
+        <div id="answer-4"> </div>
+        <script>
+            function answer4(){
+                var x4=document.getElementById('answer-4');
+                if(x4.innerHTML===" "){
+                    x4.innerHTML="Option (A)-- a) x(0) = 2";
+                }
+                else{
+                    x4.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 5-->
+         <p><b>Question.5</b><br>final value of the signal X(z) = 2z-1 / 1-1.8z-1+0.8z-2) <br>
+            a) x(0) = 10 <br> 
+            b) x(∞) =10 <br>
+            c) x(0) = 0 <br>
+            d) x(∞) =0 <br>
+        </p>
+        <p><button onclick="answer5()"><b>Answer</b></button></p>
+        <div id="answer-5"> </div>
+        <script>
+            function answer5(){
+                var x5=document.getElementById('answer-5');
+                if(x5.innerHTML===" "){
+                    x5.innerHTML="Option (B)-- b) x(∞) =10";
+                }
+                else{
+                    x5.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         
+         <!--Question 6-->
+         <p><b>Question.6</b><br>Z transform of x (n) = u(n)-u(n-10) <br>
+            a) z-1/(1-z-1 )-2 <br>
+            b) z-10/(1-z-1 ) <br>
+            c) (1-z-10 )/(1-z-1 )2 <br>
+            d) (1-z-10 )/ (1-z-1 ) <br>
+            
+        </p>
+        <p><button onclick="answer6()"><b>Answer</b></button></p>
+        <div id="answer-6"> </div>
+        <script>
+            function answer6(){
+                var x6=document.getElementById('answer-6');
+                if(x6.innerHTML===" "){
+                    x6.innerHTML="Option (D)-- d) (1-z-10 )/ (1-z-1 )";
+                }
+                else{
+                    x6.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 7-->
+         <p><b>Question.7</b><br>What is the inverse z-transform ofX(z)=1/(1-1.5z^(-1)+0.5z^(-2) )if ROC is 0.5 < |z| < 1? <br>
+             a) -2u(-n-1)+(0.5)nu(n) <br>
+            b) -2u(-n-1)-(0.5)nu(n) <br>
+            c) -2u(-n-1)+(0.5)nu(-n-1) <br>
+            d) 2u(n)+(0.5)nu(-n-1) <br>
+        </p>
+        <p><button onclick="answer7()"><b>Answer</b></button></p>
+        <div id="answer-7"> </div>
+        <script>
+            function answer7(){
+                var x7=document.getElementById('answer-7');
+                if(x7.innerHTML===" "){
+                    x7.innerHTML="Option (B)--b) -2u(-n-1)-(0.5)nu(n)";
+                }
+                else{
+                    x7.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+            <!--Question 8-->
+         <p><b>Question 8</b><br>What is the inverse z-transform of X(z)=1/(1-1.5z^(-1)+0.5z^(-2) )if ROC is |z| < 0.5? 
+             <br> a) {1,3/2,7/4,15/8,31/16,….} <br>
+            b) {1,2/3,4/7,8/15,16/31,….} <br>
+            c) {1/2,3/4,7/8,15/16,31/32,….} <br>
+            d) None of the mentioned <br>
+        </p>
+        <p><button onclick="answer8()"><b>Answer</b></button></p>
+        <div id="answer-8"> </div>
+        <script>
+            function answer8(){
+                var x8=document.getElementById('answer-8');
+                if(x8.innerHTML===" "){
+                    x8.innerHTML="Option (B)--b) {1,2/3,4/7,8/15,16/31,….}";
+                }
+                else{
+                    x8.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 9-->
+         <p><b>Question.9</b><br>Which of the following method is used to find the inverse z-transform of a signal? <br>
+            a) Counter integration <br>
+            b) Expansion into a series of terms <br>
+            c) Partial fraction expansion <br>
+            d) All of the mentioned <br>
+        </p>
+        <p><button onclick="answer9()"><b>Answer</b></button></p>
+        <div id="answer-9"> </div>
+        <script>
+            function answer9(){
+                var x9=document.getElementById('answer-9');
+                if(x9.innerHTML===" "){
+                    x9.innerHTML="Option (D)--d) All of the mentioned";
+                }
+                else{
+                    x9.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 10-->
+         <p><b>Question.10</b><br>What is the inverse z-transform of X(z)=1/(1-1.5z^(-1)+0.5z^(-2) )if ROC is |z|>1? <br>
+            a) {1,3/2,7/4,15/8,31/16,….} <br>   
+            b) {1,2/3,4/7,8/15,16/31,….} <br>
+            c) {1/2,3/4,7/8,15/16,31/32,….} <br>
+            d) None of the mentioned <br>
+        </p>
+        <p><button onclick="answer10()"><b>Answer</b></button></p>
+        <div id="answer-10"> </div>
+        <script>
+            function answer10(){
+                var x10=document.getElementById('answer-10');
+                if(x10.innerHTML===" "){
+                    x10.innerHTML="Option (a)-- a) {1,3/2,7/4,15/8,31/16,….} ";
+                }
+                else{
+                    x10.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <!--Question 11-->
+        <p><b>Question.11</b><br>What is the inverse z-transform of X(z)=1/(1-1.5z^(-1)+0.5z^(-2) )if ROC is |z| < 0.5? 
+           <br> a) [-2-0.5n]u(n) <br>
+            b) [-2+0.5n]u(n) <br>
+            c) [-2+0.5n]u(-n-1) <br>
+            d) [-2-0.5n]u(-n-1) <br>
+        </p>
+        <p><button onclick="answer11()"><b>Answer</b></button></p>
+        <div id="answer-11"> </div>
+        <script>
+            function answer11(){
+                var x11=document.getElementById('answer-11');
+                if(x11.innerHTML===" "){
+                    x11.innerHTML="Option (C)-- c) [-2+0.5n]u(-n-1";
+                }
+                else{
+                    x11.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 12-->
+         <p><b>Question.12</b><br>The discrete time signal x[n] has a z transform X(z)=sin(z2) then the value of x(-10) is: <br>
+            a. 1/10! <br>
+            b. 1/5! <br>
+            c. -1/10! <br>
+            d. -1/5! <br>
+        <p><button onclick="answer12()"><b>Answer</b></button></p>
+        <div id="answer-12"> </div>
+        <script>
+            function answer12(){
+                var x12=document.getElementById('answer-12');
+                if(x12.innerHTML===" "){
+                    x12.innerHTML="Option (B)--b. 1/5! ";
+                }
+                else{
+                    x12.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 13-->
+         <p><b>Question.13</b><br>The inverse z transform of <br>
+            X(z) = (z+2)/(2z2-7z+3) ROC:|Z|>3 <br>
+            a. (2/3)d[n]-(1/2)n u[n]+1/3(3)n u[n] <br>
+            b. (2/3)d[n]-(1/2)n u[-n]+1/3(3)n u[-n] br
+            c. (2/3)d[n]-(1/2)n u[n]+1/3(3)n u[n-1] <br>
+            d. None of the above
+        </p>
+        <p><button onclick="answer13()"><b>Answer</b></button></p>
+        <div id="answer-13"> </div>
+        <script>
+            function answer13(){
+                var x13=document.getElementById('answer-13');
+                if(x13.innerHTML===" "){
+                    x13.innerHTML="Option (A)-- a. (2/3)d[n]-(1/2)n u[n]+1/3(3)n u[n] ";
+                }
+                else{
+                    x13.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 14-->
+         <p><b>Question.14</b><br>The inverse z transform of <br>
+            X(z) = z2/(z-0.5) (z-1)2 ROC:|Z|>1 <br>
+            a. 2[(0.5)n +(n-1)] u[-n+1] <br>
+            b. 2[(0.5)n +(n-1)] u[-n-1] <br>
+            c. 2[(0.5)n +(n-1)] u[n] <br>
+            d. None of the above <br>
+        </p>
+        <p><button onclick="answer14()"><b>Answer</b></button></p>
+        <div id="answer-14"> </div>
+        <script>
+            function answer14(){
+                var x14=document.getElementById('answer-14');
+                if(x14.innerHTML===" "){
+                    x14.innerHTML="Option (C)--c. 2[(0.5)n +(n-1)] u[n]";
+                }
+                else{
+                    x14.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <!--Question 15-->
+        <p><b>Question.15</b><br>The inverse z transform of <br>
+            X(z) = z/(z-a) ROC:|Z|>|a| <br>
+            a. -a^n u[-n-1] <br>
+            b. a^n u[n] <br>
+            c. a^-n u[n] <br>
+            d. None of the above <br>
+        </p>
+        <p><button onclick="answer15()"><b>Answer</b></button></p>
+        <div id="answer-15"> </div>
+        <script>
+            function answer15(){
+                var x15=document.getElementById('answer-15');
+                if(x15.innerHTML===" "){
+                    x15.innerHTML="Option (B)--b. a^n u[n] ";
+                }
+                else{
+                    x15.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <!--Question 16-->
+        <p><b>Question.16</b><br>The inverse z transform of <br>
+            X(z) = z/(z-a) ROC:|Z|<|a| <br>
+            a. -a^n u[-n-1] <br>
+            b a^n u[n] <br>
+            c. a^-n u[n] <br>
+            d. None of the above <br>
+        </p>
+        <p><button onclick="answer16()"><b>Answer</b></button></p>
+        <div id="answer-16"> </div>
+        <script>
+            function answer16(){
+                var x16=document.getElementById('answer-16');
+                if(x16.innerHTML===" "){
+                    x16.innerHTML="Option (a)--a. -a^n u[-n-1] ";
+                }
+                else{
+                    x16.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <!--Question 17-->
+        <p><b>Question.17</b><br>Two systems with impulse responses h1(t) and h2(t) are connected in cascade.Then the overall impulse response of the cascaded system is given by <br>
+            (A) product of h1(t) and h2(t) <br>
+            (B) sum of hh1(t) and h2(t) <br>
+            (C) convolution of h1(t) and h2(t) <br>
+            (D) subtraction of h1(t) and h2(t) <br>
+         </p>
+         <p><button onclick="answer17()"><b>Answer</b></button></p>
+         <div id="answer-17"> </div>
+         <script>
+             function answer17(){
+                 var x17=document.getElementById('answer-17');
+                 if(x17.innerHTML===" "){
+                     x17.innerHTML="Option (C)--C) convolution of h1(t) and h2(t";
+                 }
+                 else{
+                     x17.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 18-->
+          <p><b>Question.18</b><br>A system is defined by its impulse response h(n) = 2^n u(n - 2). The system is <br>
+            (A) stable and causal <br>
+            (B) causal but not stable <br>
+            (C) stable but not causal <br>
+            (D) unstable and non-causal <br>
+        </p>
+        <p><button onclick="answer18()"><b>Answer</b></button></p>
+         <div id="answer-18"> </div>
+         <script>
+             function answer18(){
+                 var x18=document.getElementById('answer-18');
+                 if(x18.innerHTML===" "){
+                     x18.innerHTML="Option (B)-- (B) causal but not stable";
+                 }
+                 else{
+                     x18.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 19-->
+          <p><b>Question.19</b><br>The impulse response h[n] of a linear time-invariant system is given by h[n] = u[n + 3] + u[n - 2) - 2u[n - 7] where u[n] is the unit step sequence. The above system is <br>
+            (A) stable but not causal  <br>
+            (B) stable and causal <br>
+            (C) causal but unstable   <br>
+            (D) unstable and not causal <br>
+         </p>
+         <p><button onclick="answer19()"><b>Answer</b></button></p>
+         <div id="answer-19"> </div>
+         <script>
+             function answer19(){
+                 var x19=document.getElementById('answer-19');
+                 if(x19.innerHTML===" "){
+                     x19.innerHTML="Option (a)--(A) stable but not causal ";
+                 }
+                 else{
+                     x19.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 20-->
+          <p><b>Question.20</b><br>A causal LTI system is described by the difference equation 2y[n] = ay[n - 2] - 2x[n] + bx[n - 1] The system is stable only if <br>
+            (A) |a| = 2, |b| < 2  <br>
+            (B) |a| > 2, |b| > 2 <br>
+            (C) |a| < 2, any value of b   <br>
+            (D) |b| < 2, any value of a <br>
+         </p>
+         <p><button onclick="answer20()"><b>Answer</b></button></p>
+         <div id="answer-20"> </div>
+         <script>
+             function answer20(){
+                 var x20=document.getElementById('answer-20');
+                 if(x20.innerHTML===" "){
+                     x20.innerHTML="Option (C)--(C) |a| < 2, any value of b  ";
+                 }
+                 else{
+                     x20.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+         <!--Question 21-->
+         <p><b>Question.21</b><br>If the impulse response of discrete - time system is h[n] =- 5^n u[- n - 1], then the system function H(z) is equal to <br>
+            (A)-z/(z-5)and the system is stable <br>
+            (B)z/(z-5)and the system is stable <br>
+            (C)-z/(z-5)and the system is unstable  <br>
+            (D)z/(z-5)and the system is unstable <br>
+         </p>
+         <p><button onclick="answer21()"><b>Answer</b></button></p>
+         <div id="answer-21"> </div>
+         <script>
+             function answer21(){
+                 var x21=document.getElementById('answer-21');
+                 if(x21.innerHTML===" "){
+                     x21.innerHTML="Option (B)--  (B)z/(z-5)and the system is stable";
+                 }
+                 else{
+                     x21.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+         <hr>
+          <!--Question 22-->
+          <p><b>Question.22</b><br>The samples x(n), n = (0, 1, 2, ...) are given by <br>   
+            (A) 5(1- e^(-0.05n))  <br>
+            (B) 5e^(-0.05n) <br>
+            (C) 5(1- e^(-5n))   <br>
+            (D) 5e^(-0.05n) <br>
+        </p>
+        <p><button onclick="answer22()"><b>Answer</b></button></p>
+         <div id="answer-22"> </div>
+         <script>
+             function answer22(){
+                 var x22=document.getElementById('answer-22');
+                 if(x22.innerHTML===" "){
+                     x22.innerHTML="Option (B)--(B) 5e^(-0.05n)";
+                 }
+                 else{
+                     x22.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 23-->
+          <p><b>Question.23</b><br>The z-transform X(z) of a sequence x[n] is given by X[z]= 0.5/(1-2z^-1) .It is given that the region of convergence of X(z) includes the unit circle. The value of x[0] is <br>
+            (A) -0.5  <br>
+            (B) 0 <br>
+            (C) 0.25   <br>
+            (D) 05 <br>
+         </p>
+         <p><button onclick="answer23()"><b>Answer</b></button></p>
+         <div id="answer-23"> </div>
+         <script>
+             function answer23(){
+                 var x23=document.getElementById('answer-23');
+                 if(x23.innerHTML===" "){
+                     x23.innerHTML="Option (B)--(B) 0 ";
+                 }
+                 else{
+                     x23.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+           <!--Question 24-->
+           <p><b>Question.24</b><br>A Hilbert transformer is a <br>
+            (A) non-linear system   <br>
+            (B) non-causal system <br>
+            (C) time-varying system  <br>
+            (D) low-pass system <br>
+        </p>
+        <p><button onclick="answer24()"><b>Answer</b></button></p>
+        <div id="answer-24"> </div>
+        <script>
+            function answer24(){
+                var x24=document.getElementById('answer-24');
+                if(x24.innerHTML===" "){
+                    x24.innerHTML="Option (A)--(A) non-linear system ";
+                }
+                else{
+                    x24.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 25-->
+         <p><b>Question.25</b><br>The z -transform of a system is H(z)= z/(z-0.5),If the ROC is |z| < 0.2, then the impulse response of the system is <br>
+            (A) (0.2)^n u(n)  <br>
+            (B) (0.2)^n u(-n-1) <br>
+            (C) -(0.2)^n u(n) <br>  
+            (D) -(0.2)^n u(-n-1) <br>
+        </p>
+        <p><button onclick="answer25()"><b>Answer</b></button></p>
+        <div id="answer-25"> </div>
+        <script>
+            function answer25(){
+                var x25=document.getElementById('answer-25');
+                if(x25.innerHTML===" "){
+                    x25.innerHTML="Option (D)--(D) -(0.2)^n u(-n-1)";
+                }
+                else{
+                    x25.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         
+         <!--Question 26-->
+         <p><b>Question.26</b><br>The region of convergence of the z - trANSWERform of a unit step function is <br>
+            (A) |z| > 1  <br>
+            (B) |z| < 1 <br>
+            (C) (Real part of z ) > 0   <br>
+            (D) (Real part of z ) < 0 <br>
+        </p>
+        <p><button onclick="answer26()"><b>Answer</b></button></p>
+        <div id="answer-26"> </div>
+        <script>
+            function answer26(){
+                var x26=document.getElementById('answer-26');
+                if(x26.innerHTML===" "){
+                    x26.innerHTML="Option (A)--(A) |z| > 1  ";
+                }
+                else{
+                    x26.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <h3 style="text-align: center;">Laplace Questions - UNIT 3</h3>
+         <!--Question 27-->
+         <p><b>Question.27</b><br>Laplace transform of u(t) is given by: <br>
+            a) 1 <br>
+            b) s <br>
+            c) (1/s) <br>
+            d) None of the abov <br>
+        </p>
+        <p><button onclick="answer27()"><b>Answer</b></button></p>
+        <div id="answer-27"> </div>
+        <script>
+            function answer27(){
+                var x27=document.getElementById('answer-27');
+                if(x27.innerHTML===" "){
+                    x27.innerHTML="Option (C)--c) (1/s)";
+                }
+                else{
+                    x27.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+            <!--Question 28-->
+         <p><b>Question 28</b><br>The Laplace transform of Cos(at)u(t) is given by: <br>
+            a) (1/s^2 + a^2) <br>
+            b) (s/s^2 + a^2) <br>
+            c) (a/s^2 + a^2) <br>
+            d) None of the above <br>
+        </p>
+        <p><button onclick="answer28()"><b>Answer</b></button></p>
+        <div id="answer-28"> </div>
+        <script>
+            function answer28(){
+                var x28=document.getElementById('answer-28');
+                if(x28.innerHTML===" "){
+                    x28.innerHTML="Option (B)--b) (s/s^2 + a^2)";
+                }
+                else{
+                    x28.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 29-->
+         <p><b>Question.29</b><br>The Laplace transform of r(t) is given by: <br>
+            a) (1/s^2) <br>
+            b) s <br>
+            c) (1/s) <br>
+            d) None of the above <br>
+        </p>
+        <p><button onclick="answer29()"><b>Answer</b></button></p>
+        <div id="answer-29"> </div>
+        <script>
+            function answer29(){
+                var x29=document.getElementById('answer-29');
+                if(x29.innerHTML===" "){
+                    x29.innerHTML="Option (A)--a) (1/s^2)";
+                }
+                else{
+                    x29.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+         <!--Question 30-->
+         <p><b>Question.30</b><br>The ROC of Sin(at)u(t) is given by: <br>
+            a) Re{s}>0 <br>
+            b) Re{s}< 0 <br>
+            c) Entire s-plane <br>
+            d) None of the above <br>
+        </p>
+        <p><button onclick="answer30()"><b>Answer</b></button></p>
+        <div id="answer-30"> </div>
+        <script>
+            function answer30(){
+                var x30=document.getElementById('answer-30');
+                if(x30.innerHTML===" "){
+                    x30.innerHTML="Option (A)--a) Re{s}>0";
+                }
+                else{
+                    x30.innerHTML=" ";
+                }
+            }
+        </script>
+        <hr>
+        <!--Question 31-->
+        <p><b>Question.31</b><br>The Laplace transform of (e^-at) u(t) is given by: <br>
+            a) (1/s+a) with ROC: Re{s}>a <br>
+            b) (1/s+a) with ROC: Re{s}>-a <br>
+            c) (1/s+a) with ROC: Re{s}< a <br>
+            d) (1 / s+a) with ROC : Re{s} < -a <br>
+         </p>
+         <p><button onclick="answer31()"><b>Answer</b></button></p>
+         <div id="answer-31"> </div>
+         <script>
+             function answer31(){
+                 var x31=document.getElementById('answer-31');
+                 if(x31.innerHTML===" "){
+                     x31.innerHTML="Option (B)--b) (1/s+a) with ROC: Re{s}>-a";
+                 }
+                 else{
+                     x31.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <!--Question 32-->
+          <p><b>Question.32</b><br>Find the Laplace transform of δ(t). <br>
+            a) 1 <br>
+            b) 0 <br>   
+            c) ∞ <br>
+            d) 2 <br>
+        </p>
+        <p><button onclick="answer32()"><b>Answer</b></button></p>
+         <div id="answer-32"> </div>
+         <script>
+             function answer32(){
+                 var x32=document.getElementById('answer-32');
+                 if(x32.innerHTML===" "){
+                     x32.innerHTML="Option (A)--a) 1";
+                 }
+                 else{
+                     x32.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+         <!--Question 33-->
+         <p><b>Question.33</b><br>Find the initial value of the signal whose laplace transform is: <br>
+            X(s)=(s+1)/s(s+2) <br>
+            (a) 1 <br>
+            (b) 2 <br>
+            (c) infinity <br>
+            (d)0 <br>
+         </p>
+         <p><button onclick="answer33()"><b>Answer</b></button></p>
+         <div id="answer-33"> </div>
+         <script>
+             function answer33(){
+                 var x33=document.getElementById('answer-33');
+                 if(x33.innerHTML===" "){
+                     x33.innerHTML="Option (A)--(a) 1";
+                 }
+                 else{
+                     x33.innerHTML=" ";
+                 }
+             }
+         </script>
+         <hr>
+          <h1 style="text-align: center;">END</h1>
+
+    </div>
+
+
+
+
+</body>
+</html>
